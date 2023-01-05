@@ -1,0 +1,2630 @@
+Model {
+  Name			  "CDMA_AWGN"
+  Version		  7.6
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.26"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "GBK"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Tue Jul 27 14:42:19 2010"
+  Creator		  "Administrator"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Administrator"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Jul 27 15:57:15 2010"
+  RTWModifiedTimeStamp	  0
+  ModelVersionFormat	  "1.%<AutoIncrement:26>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  on
+  SampleTimeAnnotations	  on
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.10.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.10.0"
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.10.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.10.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.10.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.10.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.10.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateSLWebview"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  12
+	  Version		  "1.10.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 72, 69, 952, 699 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      IntermediateResultsDataTypeStr "Inherit: Inherit via internal rule"
+      AlgorithmType	      "Newton-Raphson"
+      Iterations	      "3"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "CDMA_AWGN"
+    Location		    [2, 74, 1022, 707]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "138"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "83"
+    Block {
+      BlockType		      Reference
+      Name		      "AWGN\nChannel"
+      SID		      "3"
+      Ports		      [1, 1]
+      Position		      [205, 36, 300, 94]
+      LibraryVersion	      "1.463"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "commchan3/AWGN\nChannel"
+      SourceType	      "AWGN Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      GeneratePreprocessorConditionals off
+      InputProcessing	      "Columns as channels (frame based)"
+      seed		      "67"
+      noiseMode		      "Signal to noise ratio  (Eb/No)"
+      EbNodB		      "4"
+      EsNodB		      "10"
+      SNRdB		      "10"
+      bitsPerSym	      "1"
+      Ps		      "1"
+      Tsym		      "1e-6"
+      variance		      "1"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Add"
+      SID		      "67"
+      Ports		      [3, 1]
+      Position		      [605, 79, 660, 201]
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "BPSK\nDemodulator\nBaseband"
+      SID		      "4"
+      Ports		      [1, 1]
+      Position		      [225, 345, 300, 395]
+      LibraryVersion	      "1.548"
+      DialogController	      "commDDGCreate"
+      DialogControllerArgs    "DataTag1"
+      SourceBlock	      "commdigbbndpm3/BPSK\nDemodulator\nBaseband"
+      SourceType	      "BPSK Demodulator Baseband"
+      Ph		      "0"
+      DecType		      "Hard decision"
+      VarSource		      "Dialog"
+      Variance		      "1"
+      outDtype		      "Inherit via internal rule"
+      derotateFactorDTMode    "Same word length as input"
+      derotateFactorWordLen   "16"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Delay"
+      SID		      "79"
+      Ports		      [1, 1]
+      Position		      [240, 285, 280, 325]
+      LibraryVersion	      "1.707"
+      UserDataPersistent      on
+      UserData		      "DataTag2"
+      SourceBlock	      "dspsigops/Delay"
+      SourceType	      "Delay"
+      InputProcessing	      "Columns as channels (frame based)"
+      dly_unit		      "Samples"
+      delay		      "1"
+      ic_detail		      off
+      dif_ic_for_ch	      off
+      dif_ic_for_dly	      off
+      ic		      "0"
+      reset_popup	      "None"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Delay1"
+      SID		      "81"
+      Ports		      [1, 1]
+      Position		      [335, 45, 375, 85]
+      LibraryVersion	      "1.707"
+      UserDataPersistent      on
+      UserData		      "DataTag3"
+      SourceBlock	      "dspsigops/Delay"
+      SourceType	      "Delay"
+      InputProcessing	      "Columns as channels (frame based)"
+      dly_unit		      "Samples"
+      delay		      "63"
+      ic_detail		      off
+      dif_ic_for_ch	      off
+      dif_ic_for_dly	      off
+      ic		      "0"
+      reset_popup	      "None"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Delay2"
+      SID		      "82"
+      Ports		      [1, 1]
+      Position		      [335, 125, 375, 165]
+      LibraryVersion	      "1.707"
+      UserDataPersistent      on
+      UserData		      "DataTag4"
+      SourceBlock	      "dspsigops/Delay"
+      SourceType	      "Delay"
+      InputProcessing	      "Columns as channels (frame based)"
+      dly_unit		      "Samples"
+      delay		      "62"
+      ic_detail		      off
+      dif_ic_for_ch	      off
+      dif_ic_for_dly	      off
+      ic		      "0"
+      reset_popup	      "None"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Delay3"
+      SID		      "83"
+      Ports		      [1, 1]
+      Position		      [335, 210, 375, 250]
+      LibraryVersion	      "1.707"
+      UserDataPersistent      on
+      UserData		      "DataTag5"
+      SourceBlock	      "dspsigops/Delay"
+      SourceType	      "Delay"
+      InputProcessing	      "Columns as channels (frame based)"
+      dly_unit		      "Samples"
+      delay		      "61"
+      ic_detail		      off
+      dif_ic_for_ch	      off
+      dif_ic_for_dly	      off
+      ic		      "0"
+      reset_popup	      "None"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      SID		      "7"
+      Ports		      [1]
+      Position		      [435, 325, 525, 395]
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Divide1"
+      SID		      "65"
+      Ports		      [2, 1]
+      Position		      [530, 137, 560, 168]
+      Inputs		      "**"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Divide2"
+      SID		      "66"
+      Ports		      [2, 1]
+      Position		      [530, 222, 560, 253]
+      Inputs		      "**"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Divide4"
+      SID		      "34"
+      Ports		      [2, 1]
+      Position		      [530, 42, 560, 73]
+      Inputs		      "**"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error Rate\nCalculation"
+      SID		      "5"
+      Ports		      [2, 1]
+      Position		      [335, 332, 410, 383]
+      LibraryVersion	      "1.316"
+      SourceBlock	      "commsink2/Error Rate\nCalculation"
+      SourceType	      "Error Rate Calculation"
+      N			      "0"
+      st_delay		      "10"
+      cp_mode		      "Entire frame"
+      subframe		      "[]"
+      PMode		      "Port"
+      WsName		      "ErrorVec"
+      RsMode2		      off
+      stop		      off
+      numErr		      "100"
+      maxBits		      "1e6"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From"
+      SID		      "27"
+      Position		      [175, 291, 215, 319]
+      GotoTag		      "bits"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Math
+      Name		      "Math\nFunction"
+      SID		      "71"
+      Ports		      [1, 1]
+      Position		      [470, 65, 500, 95]
+      Operator		      "conj"
+    }
+    Block {
+      BlockType		      Math
+      Name		      "Math\nFunction1"
+      SID		      "72"
+      Ports		      [1, 1]
+      Position		      [470, 145, 500, 175]
+      Operator		      "conj"
+    }
+    Block {
+      BlockType		      Math
+      Name		      "Math\nFunction2"
+      SID		      "73"
+      Ports		      [1, 1]
+      Position		      [470, 230, 500, 260]
+      Operator		      "conj"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel"
+      SID		      "28"
+      Ports		      [1, 1]
+      Position		      [85, 35, 180, 95]
+      LibraryVersion	      "1.463"
+      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      GeneratePreprocessorConditionals off
+      maxDopplerShift	      "40"
+      spectrumType	      "Jakes"
+      sigmaGaussian	      "1/sqrt(2)"
+      coeffRounded	      "[1 -1.72 0.785]"
+      freqMinMaxRJakes	      "[0 1]"
+      freqMinMaxAJakes	      "[0 1]"
+      sigmaGaussian1	      "1/sqrt(2)"
+      sigmaGaussian2	      "1/sqrt(2)"
+      centerFreqGaussian1     "0.0"
+      centerFreqGaussian2     "0.0"
+      gainGaussian1	      "0.5"
+      gainGaussian2	      "0.5"
+      coeffBell		      "9"
+      dopplerSpectrum	      "doppler.jakes"
+      pathDelays	      "[0 1e-6/63 2e-6/63]"
+      avgPathGaindB	      "[0 -3 -6]"
+      normalizePathGains      on
+      seed		      "73"
+      enableProbe	      "0"
+      openVisAtStart	      off
+      outPathGains	      off
+      outDelay		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RAKE1"
+      SID		      "37"
+      Ports		      [1, 2]
+      Position		      [405, 35, 445, 95]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"RAKE1"
+	Location		[2, 82, 1006, 715]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"156"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "39"
+	  Position		  [25, 178, 55, 192]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband2"
+	  SID			  "15"
+	  Ports			  [1, 1]
+	  Position		  [165, 26, 240, 74]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag6"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband5"
+	  SID			  "30"
+	  Ports			  [1, 1]
+	  Position		  [165, 316, 240, 364]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag7"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide1"
+	  SID			  "11"
+	  Ports			  [2, 1]
+	  Position		  [270, 162, 300, 193]
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide3"
+	  SID			  "32"
+	  Ports			  [2, 1]
+	  Position		  [270, 317, 300, 348]
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Integrate\nand Dump"
+	  SID			  "13"
+	  Ports			  [1, 1]
+	  Position		  [335, 158, 415, 202]
+	  LibraryVersion	  "1.600"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag8"
+	  SourceBlock		  "commfilt2/Integrate\nand Dump"
+	  SourceType		  "Integrate and Dump"
+	  obssamples		  "63"
+	  offsetsamples		  "0"
+	  nodump		  off
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  accumMode		  "Inherit via internal rule"
+	  accumWordLength	  "32"
+	  accumFracLength	  "30"
+	  outputMode		  "Same as accumulator"
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Integrate\nand Dump1"
+	  SID			  "33"
+	  Ports			  [1, 1]
+	  Position		  [335, 313, 415, 357]
+	  LibraryVersion	  "1.600"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag9"
+	  SourceBlock		  "commfilt2/Integrate\nand Dump"
+	  SourceType		  "Integrate and Dump"
+	  obssamples		  "63"
+	  offsetsamples		  "0"
+	  nodump		  off
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  accumMode		  "Inherit via internal rule"
+	  accumWordLength	  "32"
+	  accumFracLength	  "30"
+	  outputMode		  "Same as accumulator"
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PN Sequence\nGenerator1"
+	  SID			  "12"
+	  Ports			  [0, 1]
+	  Position		  [65, 28, 145, 72]
+	  LibraryVersion	  "1.282"
+	  SourceBlock		  "commseqgen2/PN Sequence\nGenerator"
+	  SourceType		  "PN Sequence Generator"
+	  poly			  "[1 0 0 0 0 1 1]"
+	  ini_sta		  "[0 0 0 0 0 1]"
+	  outBitMaskSource	  "Dialog parameter"
+	  shift			  "0"
+	  Ts			  "1e-6/63"
+	  frameBased		  on
+	  sampPerFrame		  "63"
+	  reset			  off
+	  bitPackedOutputs	  off
+	  outDataType		  "double"
+	  numPackedBits		  "8"
+	  bitPackDataSigned	  off
+	  bitPackedOutDType	  "double"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PN Sequence\nGenerator3"
+	  SID			  "31"
+	  Ports			  [0, 1]
+	  Position		  [45, 318, 125, 362]
+	  LibraryVersion	  "1.282"
+	  SourceBlock		  "commseqgen2/PN Sequence\nGenerator"
+	  SourceType		  "PN Sequence Generator"
+	  poly			  "[1 0 0 0 0 1 1]"
+	  ini_sta		  "[0 1 0 1 0 1]"
+	  outBitMaskSource	  "Dialog parameter"
+	  shift			  "0"
+	  Ts			  "1e-6/63"
+	  frameBased		  on
+	  sampPerFrame		  "63"
+	  reset			  off
+	  bitPackedOutputs	  off
+	  outDataType		  "double"
+	  numPackedBits		  "8"
+	  bitPackDataSigned	  off
+	  bitPackedOutDType	  "double"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "r1"
+	  SID			  "38"
+	  Position		  [440, 173, 470, 187]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "h1"
+	  SID			  "40"
+	  Position		  [440, 328, 470, 342]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "PN Sequence\nGenerator1"
+	  SrcPort		  1
+	  DstBlock		  "BPSK\nModulator\nBaseband2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide1"
+	  SrcPort		  1
+	  DstBlock		  "Integrate\nand Dump"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband2"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Divide1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [180, 0]
+	    DstBlock		    "Divide3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Divide1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "PN Sequence\nGenerator3"
+	  SrcPort		  1
+	  DstBlock		  "BPSK\nModulator\nBaseband5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband5"
+	  SrcPort		  1
+	  DstBlock		  "Divide3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Divide3"
+	  SrcPort		  1
+	  DstBlock		  "Integrate\nand Dump1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrate\nand Dump"
+	  SrcPort		  1
+	  DstBlock		  "r1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrate\nand Dump1"
+	  SrcPort		  1
+	  DstBlock		  "h1"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [238, 140]
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RAKE2"
+      SID		      "41"
+      Ports		      [1, 2]
+      Position		      [405, 115, 445, 175]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"RAKE2"
+	Location		[2, 82, 1006, 715]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"156"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "42"
+	  Position		  [25, 178, 55, 192]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband2"
+	  SID			  "43"
+	  Ports			  [1, 1]
+	  Position		  [165, 26, 240, 74]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag10"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband5"
+	  SID			  "44"
+	  Ports			  [1, 1]
+	  Position		  [165, 316, 240, 364]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag11"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide1"
+	  SID			  "45"
+	  Ports			  [2, 1]
+	  Position		  [270, 162, 300, 193]
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide3"
+	  SID			  "46"
+	  Ports			  [2, 1]
+	  Position		  [270, 317, 300, 348]
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Integrate\nand Dump"
+	  SID			  "47"
+	  Ports			  [1, 1]
+	  Position		  [335, 158, 415, 202]
+	  LibraryVersion	  "1.600"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag12"
+	  SourceBlock		  "commfilt2/Integrate\nand Dump"
+	  SourceType		  "Integrate and Dump"
+	  obssamples		  "63"
+	  offsetsamples		  "0"
+	  nodump		  off
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  accumMode		  "Inherit via internal rule"
+	  accumWordLength	  "32"
+	  accumFracLength	  "30"
+	  outputMode		  "Same as accumulator"
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Integrate\nand Dump1"
+	  SID			  "48"
+	  Ports			  [1, 1]
+	  Position		  [335, 313, 415, 357]
+	  LibraryVersion	  "1.600"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag13"
+	  SourceBlock		  "commfilt2/Integrate\nand Dump"
+	  SourceType		  "Integrate and Dump"
+	  obssamples		  "63"
+	  offsetsamples		  "0"
+	  nodump		  off
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  accumMode		  "Inherit via internal rule"
+	  accumWordLength	  "32"
+	  accumFracLength	  "30"
+	  outputMode		  "Same as accumulator"
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PN Sequence\nGenerator1"
+	  SID			  "49"
+	  Ports			  [0, 1]
+	  Position		  [65, 28, 145, 72]
+	  LibraryVersion	  "1.282"
+	  SourceBlock		  "commseqgen2/PN Sequence\nGenerator"
+	  SourceType		  "PN Sequence Generator"
+	  poly			  "[1 0 0 0 0 1 1]"
+	  ini_sta		  "[0 0 0 0 0 1]"
+	  outBitMaskSource	  "Dialog parameter"
+	  shift			  "0"
+	  Ts			  "1e-6/63"
+	  frameBased		  on
+	  sampPerFrame		  "63"
+	  reset			  off
+	  bitPackedOutputs	  off
+	  outDataType		  "double"
+	  numPackedBits		  "8"
+	  bitPackDataSigned	  off
+	  bitPackedOutDType	  "double"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PN Sequence\nGenerator3"
+	  SID			  "50"
+	  Ports			  [0, 1]
+	  Position		  [45, 318, 125, 362]
+	  LibraryVersion	  "1.282"
+	  SourceBlock		  "commseqgen2/PN Sequence\nGenerator"
+	  SourceType		  "PN Sequence Generator"
+	  poly			  "[1 0 0 0 0 1 1]"
+	  ini_sta		  "[0 1 0 1 0 1]"
+	  outBitMaskSource	  "Dialog parameter"
+	  shift			  "0"
+	  Ts			  "1e-6/63"
+	  frameBased		  on
+	  sampPerFrame		  "63"
+	  reset			  off
+	  bitPackedOutputs	  off
+	  outDataType		  "double"
+	  numPackedBits		  "8"
+	  bitPackDataSigned	  off
+	  bitPackedOutDType	  "double"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "r2"
+	  SID			  "51"
+	  Position		  [440, 173, 470, 187]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "h2"
+	  SID			  "52"
+	  Position		  [440, 328, 470, 342]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Integrate\nand Dump1"
+	  SrcPort		  1
+	  DstBlock		  "h2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrate\nand Dump"
+	  SrcPort		  1
+	  DstBlock		  "r2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide3"
+	  SrcPort		  1
+	  DstBlock		  "Integrate\nand Dump1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband5"
+	  SrcPort		  1
+	  DstBlock		  "Divide3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "PN Sequence\nGenerator3"
+	  SrcPort		  1
+	  DstBlock		  "BPSK\nModulator\nBaseband5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Divide1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [180, 0]
+	    DstBlock		    "Divide3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband2"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Divide1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide1"
+	  SrcPort		  1
+	  DstBlock		  "Integrate\nand Dump"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "PN Sequence\nGenerator1"
+	  SrcPort		  1
+	  DstBlock		  "BPSK\nModulator\nBaseband2"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [238, 140]
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RAKE3"
+      SID		      "53"
+      Ports		      [1, 2]
+      Position		      [405, 200, 445, 260]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"RAKE3"
+	Location		[2, 82, 1006, 715]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"156"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "54"
+	  Position		  [25, 178, 55, 192]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband2"
+	  SID			  "55"
+	  Ports			  [1, 1]
+	  Position		  [165, 26, 240, 74]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag14"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband5"
+	  SID			  "56"
+	  Ports			  [1, 1]
+	  Position		  [165, 316, 240, 364]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag15"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide1"
+	  SID			  "57"
+	  Ports			  [2, 1]
+	  Position		  [270, 162, 300, 193]
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide3"
+	  SID			  "58"
+	  Ports			  [2, 1]
+	  Position		  [270, 317, 300, 348]
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Integrate\nand Dump"
+	  SID			  "59"
+	  Ports			  [1, 1]
+	  Position		  [335, 158, 415, 202]
+	  LibraryVersion	  "1.600"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag16"
+	  SourceBlock		  "commfilt2/Integrate\nand Dump"
+	  SourceType		  "Integrate and Dump"
+	  obssamples		  "63"
+	  offsetsamples		  "0"
+	  nodump		  off
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  accumMode		  "Inherit via internal rule"
+	  accumWordLength	  "32"
+	  accumFracLength	  "30"
+	  outputMode		  "Same as accumulator"
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Integrate\nand Dump1"
+	  SID			  "60"
+	  Ports			  [1, 1]
+	  Position		  [335, 313, 415, 357]
+	  LibraryVersion	  "1.600"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag17"
+	  SourceBlock		  "commfilt2/Integrate\nand Dump"
+	  SourceType		  "Integrate and Dump"
+	  obssamples		  "63"
+	  offsetsamples		  "0"
+	  nodump		  off
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  accumMode		  "Inherit via internal rule"
+	  accumWordLength	  "32"
+	  accumFracLength	  "30"
+	  outputMode		  "Same as accumulator"
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PN Sequence\nGenerator1"
+	  SID			  "61"
+	  Ports			  [0, 1]
+	  Position		  [65, 28, 145, 72]
+	  LibraryVersion	  "1.282"
+	  SourceBlock		  "commseqgen2/PN Sequence\nGenerator"
+	  SourceType		  "PN Sequence Generator"
+	  poly			  "[1 0 0 0 0 1 1]"
+	  ini_sta		  "[0 0 0 0 0 1]"
+	  outBitMaskSource	  "Dialog parameter"
+	  shift			  "0"
+	  Ts			  "1e-6/63"
+	  frameBased		  on
+	  sampPerFrame		  "63"
+	  reset			  off
+	  bitPackedOutputs	  off
+	  outDataType		  "double"
+	  numPackedBits		  "8"
+	  bitPackDataSigned	  off
+	  bitPackedOutDType	  "double"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PN Sequence\nGenerator3"
+	  SID			  "62"
+	  Ports			  [0, 1]
+	  Position		  [45, 318, 125, 362]
+	  LibraryVersion	  "1.282"
+	  SourceBlock		  "commseqgen2/PN Sequence\nGenerator"
+	  SourceType		  "PN Sequence Generator"
+	  poly			  "[1 0 0 0 0 1 1]"
+	  ini_sta		  "[0 1 0 1 0 1]"
+	  outBitMaskSource	  "Dialog parameter"
+	  shift			  "0"
+	  Ts			  "1e-6/63"
+	  frameBased		  on
+	  sampPerFrame		  "63"
+	  reset			  off
+	  bitPackedOutputs	  off
+	  outDataType		  "double"
+	  numPackedBits		  "8"
+	  bitPackDataSigned	  off
+	  bitPackedOutDType	  "double"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "r3"
+	  SID			  "63"
+	  Position		  [440, 173, 470, 187]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "h3"
+	  SID			  "64"
+	  Position		  [440, 328, 470, 342]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "PN Sequence\nGenerator1"
+	  SrcPort		  1
+	  DstBlock		  "BPSK\nModulator\nBaseband2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide1"
+	  SrcPort		  1
+	  DstBlock		  "Integrate\nand Dump"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband2"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Divide1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [180, 0]
+	    DstBlock		    "Divide3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Divide1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "PN Sequence\nGenerator3"
+	  SrcPort		  1
+	  DstBlock		  "BPSK\nModulator\nBaseband5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband5"
+	  SrcPort		  1
+	  DstBlock		  "Divide3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Divide3"
+	  SrcPort		  1
+	  DstBlock		  "Integrate\nand Dump1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrate\nand Dump"
+	  SrcPort		  1
+	  DstBlock		  "r3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrate\nand Dump1"
+	  SrcPort		  1
+	  DstBlock		  "h3"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [238, 140]
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem"
+      SID		      "35"
+      Ports		      [0, 1]
+      Position		      [15, 35, 55, 95]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Subsystem"
+	Location		[2, 82, 1006, 715]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"132"
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add"
+	  SID			  "24"
+	  Ports			  [2, 1]
+	  Position		  [405, 202, 435, 233]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband"
+	  SID			  "2"
+	  Ports			  [1, 1]
+	  Position		  [150, 81, 225, 129]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag18"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband1"
+	  SID			  "14"
+	  Ports			  [1, 1]
+	  Position		  [185, 176, 260, 224]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag19"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband3"
+	  SID			  "18"
+	  Ports			  [1, 1]
+	  Position		  [150, 291, 225, 339]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag20"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "BPSK\nModulator\nBaseband4"
+	  SID			  "19"
+	  Ports			  [1, 1]
+	  Position		  [185, 386, 260, 434]
+	  LibraryVersion	  "1.548"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag21"
+	  SourceBlock		  "commdigbbndpm3/BPSK\nModulator\nBaseband"
+	  SourceType		  "BPSK Modulator Baseband"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  Ph			  "0"
+	  outDtype		  "double"
+	  outWordLen		  "16"
+	  outUDDataType		  "sfix(16)"
+	  outFracLenMode	  "Best precision"
+	  outFracLen		  "15"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Bernoulli Binary\nGenerator"
+	  SID			  "1"
+	  Ports			  [0, 1]
+	  Position		  [25, 83, 105, 127]
+	  LibraryVersion	  "1.111"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag22"
+	  FontName		  "Arial"
+	  SourceBlock		  "commrandsrc2/Bernoulli Binary\nGenerator"
+	  SourceType		  "Bernoulli Binary Generator"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  P			  "0.5"
+	  seed			  "61"
+	  Ts			  "1e-6"
+	  frameBased		  off
+	  sampPerFrame		  "1"
+	  orient		  off
+	  outDataType		  "double"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Bernoulli Binary\nGenerator1"
+	  SID			  "20"
+	  Ports			  [0, 1]
+	  Position		  [25, 293, 105, 337]
+	  LibraryVersion	  "1.111"
+	  DialogController	  "commDDGCreate"
+	  DialogControllerArgs	  "DataTag23"
+	  FontName		  "Arial"
+	  SourceBlock		  "commrandsrc2/Bernoulli Binary\nGenerator"
+	  SourceType		  "Bernoulli Binary Generator"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	  P			  "1"
+	  seed			  "61"
+	  Ts			  "1e-6"
+	  frameBased		  off
+	  sampPerFrame		  "1"
+	  orient		  off
+	  outDataType		  "double"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide"
+	  SID			  "9"
+	  Ports			  [2, 1]
+	  Position		  [330, 97, 360, 128]
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide2"
+	  SID			  "21"
+	  Ports			  [2, 1]
+	  Position		  [330, 307, 360, 338]
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto"
+	  SID			  "26"
+	  Position		  [150, 25, 190, 55]
+	  GotoTag		  "bits"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PN Sequence\nGenerator"
+	  SID			  "10"
+	  Ports			  [0, 1]
+	  Position		  [65, 178, 145, 222]
+	  LibraryVersion	  "1.282"
+	  SourceBlock		  "commseqgen2/PN Sequence\nGenerator"
+	  SourceType		  "PN Sequence Generator"
+	  poly			  "[1 0 0 0 0 1 1]"
+	  ini_sta		  "[0 0 0 0 0 1]"
+	  outBitMaskSource	  "Dialog parameter"
+	  shift			  "0"
+	  Ts			  "1e-6/63"
+	  frameBased		  on
+	  sampPerFrame		  "63"
+	  reset			  off
+	  bitPackedOutputs	  off
+	  outDataType		  "double"
+	  numPackedBits		  "8"
+	  bitPackDataSigned	  off
+	  bitPackedOutDType	  "double"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PN Sequence\nGenerator2"
+	  SID			  "22"
+	  Ports			  [0, 1]
+	  Position		  [65, 388, 145, 432]
+	  LibraryVersion	  "1.282"
+	  SourceBlock		  "commseqgen2/PN Sequence\nGenerator"
+	  SourceType		  "PN Sequence Generator"
+	  poly			  "[1 0 0 0 0 1 1]"
+	  ini_sta		  "[0 1 0 1 0 1]"
+	  outBitMaskSource	  "Dialog parameter"
+	  shift			  "0"
+	  Ts			  "1e-6/63"
+	  frameBased		  on
+	  sampPerFrame		  "63"
+	  reset			  off
+	  bitPackedOutputs	  off
+	  outDataType		  "double"
+	  numPackedBits		  "8"
+	  bitPackDataSigned	  off
+	  bitPackedOutDType	  "double"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Repeat"
+	  SID			  "8"
+	  Ports			  [1, 1]
+	  Position		  [255, 88, 295, 122]
+	  LibraryVersion	  "1.707"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag24"
+	  SourceBlock		  "dspsigops/Repeat"
+	  SourceType		  "Repeat"
+	  N			  "63"
+	  InputProcessing	  "Columns as channels (frame based)"
+	  RateOptions		  "Enforce single-rate processing"
+	  ic			  "0"
+	  mode			  "Unused parameter value"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Repeat1"
+	  SID			  "23"
+	  Ports			  [1, 1]
+	  Position		  [255, 298, 295, 332]
+	  LibraryVersion	  "1.707"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag25"
+	  SourceBlock		  "dspsigops/Repeat"
+	  SourceType		  "Repeat"
+	  N			  "63"
+	  InputProcessing	  "Columns as channels (frame based)"
+	  RateOptions		  "Enforce single-rate processing"
+	  ic			  "0"
+	  mode			  "Unused parameter value"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "36"
+	  Position		  [460, 213, 490, 227]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Bernoulli Binary\nGenerator"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "BPSK\nModulator\nBaseband"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -65]
+	    DstBlock		    "Goto"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband"
+	  SrcPort		  1
+	  DstBlock		  "Repeat"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Repeat"
+	  SrcPort		  1
+	  DstBlock		  "Divide"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "PN Sequence\nGenerator"
+	  SrcPort		  1
+	  DstBlock		  "BPSK\nModulator\nBaseband1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband1"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, -80]
+	  DstBlock		  "Divide"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Bernoulli Binary\nGenerator1"
+	  SrcPort		  1
+	  DstBlock		  "BPSK\nModulator\nBaseband3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband3"
+	  SrcPort		  1
+	  DstBlock		  "Repeat1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Repeat1"
+	  SrcPort		  1
+	  DstBlock		  "Divide2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "PN Sequence\nGenerator2"
+	  SrcPort		  1
+	  DstBlock		  "BPSK\nModulator\nBaseband4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BPSK\nModulator\nBaseband4"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, -80]
+	  DstBlock		  "Divide2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Divide"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 95]
+	  DstBlock		  "Add"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide2"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -100]
+	  DstBlock		  "Add"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Add"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "BPSK\nDemodulator\nBaseband"
+      SrcPort		      1
+      DstBlock		      "Error Rate\nCalculation"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Error Rate\nCalculation"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Subsystem"
+      SrcPort		      1
+      DstBlock		      "Multipath Rayleigh\nFading Channel"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+      SrcPort		      1
+      DstBlock		      "AWGN\nChannel"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "AWGN\nChannel"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	Points			[0, 80]
+	Branch {
+	  DstBlock		  "Delay2"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 85]
+	  DstBlock		  "Delay3"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"Delay1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Divide4"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "Add"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Divide1"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "Add"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Divide2"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "Add"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Delay1"
+      SrcPort		      1
+      DstBlock		      "RAKE1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Delay2"
+      SrcPort		      1
+      DstBlock		      "RAKE2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Delay3"
+      SrcPort		      1
+      DstBlock		      "RAKE3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "RAKE1"
+      SrcPort		      1
+      DstBlock		      "Divide4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "RAKE1"
+      SrcPort		      2
+      DstBlock		      "Math\nFunction"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Math\nFunction"
+      SrcPort		      1
+      Points		      [5, 0; 0, -15]
+      DstBlock		      "Divide4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "RAKE2"
+      SrcPort		      1
+      Points		      [65, 0]
+      DstBlock		      "Divide1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "RAKE2"
+      SrcPort		      2
+      DstBlock		      "Math\nFunction1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Math\nFunction1"
+      SrcPort		      1
+      DstBlock		      "Divide1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "RAKE3"
+      SrcPort		      1
+      Points		      [65, 0]
+      DstBlock		      "Divide2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "RAKE3"
+      SrcPort		      2
+      DstBlock		      "Math\nFunction2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Math\nFunction2"
+      SrcPort		      1
+      DstBlock		      "Divide2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From"
+      SrcPort		      1
+      DstBlock		      "Delay"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Add"
+      SrcPort		      1
+      Points		      [0, 310; -455, 0]
+      DstBlock		      "BPSK\nDemodulator\nBaseband"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Delay"
+      SrcPort		      1
+      Points		      [0, 40]
+      DstBlock		      "Error Rate\nCalculation"
+      DstPort		      1
+    }
+  }
+}
+MatData {
+  NumRecords		  26
+  DataRecord {
+    Tag			    DataTag25
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag24
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag23
+    Data		    "  %)30     .    >     8    (     0         %    \"     $    !     0         .    2     8    (    !     "
+    "     %    \"     $    2     0         0    $@   $)E<FYO=6QL:4)I;F%R>4=E;@        "
+  }
+  DataRecord {
+    Tag			    DataTag22
+    Data		    "  %)30     .    >     8    (     0         %    \"     $    !     0         .    2     8    (    !     "
+    "     %    \"     $    2     0         0    $@   $)E<FYO=6QL:4)I;F%R>4=E;@        "
+  }
+  DataRecord {
+    Tag			    DataTag21
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag20
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag19
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag18
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag17
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    )     0         0    \"0   $EN=&5G1'5M<          "
+  }
+  DataRecord {
+    Tag			    DataTag16
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    )     0         0    \"0   $EN=&5G1'5M<          "
+  }
+  DataRecord {
+    Tag			    DataTag15
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag14
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag13
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    )     0         0    \"0   $EN=&5G1'5M<          "
+  }
+  DataRecord {
+    Tag			    DataTag12
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    )     0         0    \"0   $EN=&5G1'5M<          "
+  }
+  DataRecord {
+    Tag			    DataTag11
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag10
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag9
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    )     0         0    \"0   $EN=&5G1'5M<          "
+  }
+  DataRecord {
+    Tag			    DataTag8
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    )     0         0    \"0   $EN=&5G1'5M<          "
+  }
+  DataRecord {
+    Tag			    DataTag7
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag6
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $)04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag5
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag4
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag3
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag2
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag1
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    /     0         0    #P   $)04TM$96UO9'5L871O<@ "
+  }
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+}

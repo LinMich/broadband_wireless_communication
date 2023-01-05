@@ -1,0 +1,15 @@
+function output=DSsyn(input)
+       B=input(127:189);
+       A1=input(1:63);
+       C1=A1'*B;
+       A2=input(64:126);
+       C2=A2'*B;
+       c1=phase(C1);
+       c2=phase(C2);
+       Ph=phase(C2/C1)/(2*pi)
+       k=[1:63]';
+   out1=input(1:63).*exp(j*(c2-c1)*k/63);
+   out2=input(7:69).*exp(j*(c2-c1)*k/63);
+   out3=input(10:72).*exp(j*(c2-c1)*k/63);
+   %output=[out1;out2;out3];
+   output=[input(1:63);input(7:69);input(10:72)];

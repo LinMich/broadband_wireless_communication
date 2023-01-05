@@ -1,0 +1,4363 @@
+Model {
+  Name			  "pro8"
+  Version		  7.4
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.34"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "GBK"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Mon May 09 17:02:47 2011"
+  Creator		  "tjh"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "tjh"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed May 11 20:18:42 2011"
+  RTWModifiedTimeStamp	  227041819
+  ModelVersionFormat	  "1.%<AutoIncrement:34>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.6.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.6.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.6.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.6.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.6.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.6.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.6.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		17
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  12
+	  Version		  "1.6.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 200, 85, 1080, 715 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Concatenate
+      NumInputs		      "2"
+      ConcatenateDimension    "1"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      FrameConversion
+      InheritSamplingMode     off
+      OutFrame		      "Frame-based"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      IntermediateResultsDataTypeStr "Inherit: Inherit via internal rule"
+      AlgorithmType	      "Newton-Raphson"
+      Iterations	      "3"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reshape
+      OutputDimensionality    "1-D array"
+      OutputDimensions	      "[1,1]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+  }
+  System {
+    Name		    "pro8"
+    Location		    [2, 82, 1262, 747]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    436
+    Block {
+      BlockType		      SubSystem
+      Name		      "1:4 Demux"
+      SID		      126
+      Ports		      [1, 4]
+      Position		      [495, 71, 545, 174]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"1:4 Demux"
+	Location		[2, 82, 1262, 747]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  129
+	  Position		  [460, 238, 490, 252]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Multiport\nSelector"
+	  SID			  19
+	  Ports			  [1, 4]
+	  Position		  [500, 223, 580, 267]
+	  LibraryVersion	  "1.460"
+	  SourceBlock		  "dspindex/Multiport\nSelector"
+	  SourceType		  "Multiport Selector"
+	  rowsOrCols		  "Rows"
+	  idxCellArray		  "{ 1, 2, 3, 4 }"
+	  idxErrMode		  "Clip Index"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  127
+	  Position		  [700, 148, 730, 162]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  SID			  128
+	  Position		  [700, 233, 730, 247]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  SID			  130
+	  Position		  [695, 293, 725, 307]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out4"
+	  SID			  131
+	  Position		  [705, 363, 735, 377]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Multiport\nSelector"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -75]
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Multiport\nSelector"
+	  SrcPort		  2
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Multiport\nSelector"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Multiport\nSelector"
+	  SrcPort		  3
+	  Points		  [0, 5; 90, 0; 0, 45]
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Multiport\nSelector"
+	  SrcPort		  4
+	  Points		  [0, 110]
+	  DstBlock		  "Out4"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Add pilot"
+      SID		      84
+      Ports		      [1, 1]
+      Position		      [345, 95, 385, 155]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Add pilot"
+	Location		[211, 248, 821, 426]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  85
+	  Position		  [25, 33, 55, 47]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  17
+	  Position		  [80, 105, 110, 135]
+	  Value			  "[1 0 0 0 ; 0 1 0 0;0 0 1 0; 0 0 0 1]"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  SampleTime		  "1e-4"
+	}
+	Block {
+	  BlockType		  Concatenate
+	  Name			  "Matrix\nConcatenate"
+	  SID			  16
+	  Ports			  [2, 1]
+	  Position		  [155, 29, 210, 71]
+	  Mode			  "Multidimensional array"
+	  ConcatenateDimension	  "2"
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape"
+	  SID			  18
+	  Ports			  [1, 1]
+	  Position		  [80, 28, 110, 52]
+	  OutputDimensionality	  "Customize"
+	  OutputDimensions	  "[4,96]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  86
+	  Position		  [400, 43, 430, 57]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Reshape"
+	  SrcPort		  1
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Reshape"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Matrix\nConcatenate"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Bernoulli Binary\nGenerator"
+      SID		      13
+      Ports		      [0, 1]
+      Position		      [15, 103, 95, 147]
+      LibraryVersion	      "1.111"
+      DialogController	      "commDDGCreate"
+      DialogControllerArgs    "DataTag0"
+      FontName		      "Arial"
+      SourceBlock	      "commrandsrc2/Bernoulli Binary\nGenerator"
+      SourceType	      "Bernoulli Binary Generator"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      P			      "0.5"
+      seed		      "61"
+      Ts		      "1e-4/(4*4*96)"
+      frameBased	      on
+      sampPerFrame	      "4*4*96"
+      orient		      off
+      outDataType	      "boolean"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Channal Matrix"
+      SID		      142
+      Ports		      [4, 5]
+      Position		      [931, 215, 1049, 300]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Channal Matrix"
+	Location		[2, 82, 1245, 747]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  143
+	  Position		  [25, 38, 55, 52]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  SID			  144
+	  Position		  [25, 73, 55, 87]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In3"
+	  SID			  146
+	  Position		  [25, 108, 55, 122]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In4"
+	  SID			  147
+	  Position		  [25, 143, 55, 157]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Concatenate
+	  Name			  "Matrix\nConcatenate"
+	  SID			  408
+	  Ports			  [4, 1]
+	  Position		  [740, 257, 850, 373]
+	  NumInputs		  "4"
+	  Mode			  "Multidimensional array"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ToR1"
+	  SID			  136
+	  Ports			  [4, 2]
+	  Position		  [285, 21, 340, 164]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "ToR1"
+	    Location		    [230, 170, 933, 574]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      137
+	      Position		      [25, 48, 55, 62]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      SID		      139
+	      Position		      [30, 138, 60, 152]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      SID		      140
+	      Position		      [30, 228, 60, 242]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      SID		      141
+	      Position		      [30, 323, 60, 337]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "AWGN\nChannel"
+	      SID		      67
+	      Ports		      [1, 1]
+	      Position		      [370, 116, 465, 174]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/AWGN\nChannel"
+	      SourceType	      "AWGN Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      seed		      "73"
+	      noiseMode		      "Signal to noise ratio  (SNR)"
+	      EbNodB		      "10"
+	      EsNodB		      "10"
+	      SNRdB		      "snr"
+	      bitsPerSym	      "4"
+	      Ps		      "0.25"
+	      Tsym		      "1e-6"
+	      variance		      "1"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      132
+	      Ports		      [4, 1]
+	      Position		      [260, 87, 300, 203]
+	      Inputs		      "++++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Concatenate
+	      Name		      "Matrix\nConcatenate"
+	      SID		      378
+	      Ports		      [4, 1]
+	      Position		      [385, 243, 445, 327]
+	      NumInputs		      "4"
+	      Mode		      "Multidimensional array"
+	      ConcatenateDimension    "2"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Mean"
+	      SID		      422
+	      Ports		      [1, 1]
+	      Position		      [490, 265, 545, 305]
+	      LibraryVersion	      "1.485"
+	      DialogController	      "dspDDGCreate"
+	      DialogControllerArgs    "DataTag1"
+	      SourceBlock	      "dspstat3/Mean"
+	      SourceType	      "Mean"
+	      run		      off
+	      reset_popup	      "None"
+	      directionMode	      "Each column"
+	      dimension		      "1"
+	      treatSBRowAsCol	      on
+	      roiEnable		      off
+	      roiType		      "Rectangles"
+	      roiPortion	      "Entire ROI"
+	      roiOutput		      "Individual statistics for each ROI"
+	      roiFlag		      off
+	      additionalParams	      off
+	      allowOverrides	      on
+	      outputMode	      "Same as accumulator"
+	      outputWordLength	      "32"
+	      outputFracLength	      "30"
+	      outputDataTypeStr	      "Inherit: Same as accumulator"
+	      outputLastDataTypeStr   "Inherit: Same as accumulator"
+	      outputMin		      "[]"
+	      outputMax		      "[]"
+	      accumMode		      "Same as input"
+	      accumWordLength	      "32"
+	      accumFracLength	      "30"
+	      accumDataTypeStr	      "Inherit: Same as input"
+	      accumLastDataTypeStr    "Inherit: Same as input"
+	      roundingMode	      "Floor"
+	      overflowMode	      off
+	      LockScale		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel"
+	      SID		      68
+	      Ports		      [1, 2]
+	      Position		      [80, 25, 175, 85]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "12345"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel1"
+	      SID		      133
+	      Ports		      [1, 2]
+	      Position		      [85, 115, 180, 175]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "15678"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel2"
+	      SID		      134
+	      Ports		      [1, 2]
+	      Position		      [85, 205, 180, 265]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "13987"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel3"
+	      SID		      135
+	      Ports		      [1, 2]
+	      Position		      [85, 300, 180, 360]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "19876"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      138
+	      Position		      [490, 138, 520, 152]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "HR1"
+	      SID		      379
+	      Position		      [590, 278, 620, 292]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+	      SrcPort		      1
+	      Points		      [65, 0]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel1"
+	      SrcPort		      1
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel2"
+	      SrcPort		      1
+	      Points		      [50, 0; 0, -60]
+	      DstBlock		      "Add"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel3"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      DstBlock		      "Add"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "AWGN\nChannel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "AWGN\nChannel"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+	      SrcPort		      2
+	      Points		      [155, 0; 0, 185]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel2"
+	      SrcPort		      2
+	      Points		      [105, 0; 0, 55; 80, 0]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel3"
+	      SrcPort		      2
+	      Points		      [185, 0]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Matrix\nConcatenate"
+	      SrcPort		      1
+	      DstBlock		      "Mean"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel1"
+	      SrcPort		      2
+	      Points		      [0, 70; 120, 0; 0, 45]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Mean"
+	      SrcPort		      1
+	      DstBlock		      "HR1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ToR2"
+	  SID			  148
+	  Ports			  [4, 2]
+	  Position		  [285, 180, 340, 315]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "ToR2"
+	    Location		    [509, 193, 1131, 580]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      149
+	      Position		      [25, 48, 55, 62]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      SID		      150
+	      Position		      [30, 138, 60, 152]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      SID		      151
+	      Position		      [30, 228, 60, 242]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      SID		      152
+	      Position		      [30, 323, 60, 337]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "AWGN\nChannel"
+	      SID		      153
+	      Ports		      [1, 1]
+	      Position		      [350, 101, 445, 159]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/AWGN\nChannel"
+	      SourceType	      "AWGN Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      seed		      "210"
+	      noiseMode		      "Signal to noise ratio  (SNR)"
+	      EbNodB		      "10"
+	      EsNodB		      "10"
+	      SNRdB		      "snr"
+	      bitsPerSym	      "4"
+	      Ps		      "0.25"
+	      Tsym		      "1e-6"
+	      variance		      "1"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      154
+	      Ports		      [4, 1]
+	      Position		      [260, 72, 300, 188]
+	      Inputs		      "++++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Concatenate
+	      Name		      "Matrix\nConcatenate"
+	      SID		      376
+	      Ports		      [4, 1]
+	      Position		      [370, 269, 425, 311]
+	      NumInputs		      "4"
+	      Mode		      "Multidimensional array"
+	      ConcatenateDimension    "2"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Mean"
+	      SID		      423
+	      Ports		      [1, 1]
+	      Position		      [445, 270, 490, 310]
+	      LibraryVersion	      "1.485"
+	      DialogController	      "dspDDGCreate"
+	      DialogControllerArgs    "DataTag2"
+	      SourceBlock	      "dspstat3/Mean"
+	      SourceType	      "Mean"
+	      run		      off
+	      reset_popup	      "None"
+	      directionMode	      "Each column"
+	      dimension		      "1"
+	      treatSBRowAsCol	      on
+	      roiEnable		      off
+	      roiType		      "Rectangles"
+	      roiPortion	      "Entire ROI"
+	      roiOutput		      "Individual statistics for each ROI"
+	      roiFlag		      off
+	      additionalParams	      off
+	      allowOverrides	      on
+	      outputMode	      "Same as accumulator"
+	      outputWordLength	      "32"
+	      outputFracLength	      "30"
+	      outputDataTypeStr	      "Inherit: Same as accumulator"
+	      outputLastDataTypeStr   "Inherit: Same as accumulator"
+	      outputMin		      "[]"
+	      outputMax		      "[]"
+	      accumMode		      "Same as input"
+	      accumWordLength	      "32"
+	      accumFracLength	      "30"
+	      accumDataTypeStr	      "Inherit: Same as input"
+	      accumLastDataTypeStr    "Inherit: Same as input"
+	      roundingMode	      "Floor"
+	      overflowMode	      off
+	      LockScale		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel"
+	      SID		      155
+	      Ports		      [1, 2]
+	      Position		      [80, 25, 175, 85]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "2"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel1"
+	      SID		      156
+	      Ports		      [1, 2]
+	      Position		      [85, 115, 180, 175]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "23456"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel2"
+	      SID		      157
+	      Ports		      [1, 2]
+	      Position		      [85, 205, 180, 265]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "29876"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel3"
+	      SID		      158
+	      Ports		      [1, 2]
+	      Position		      [85, 300, 180, 360]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "27345"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      159
+	      Position		      [470, 123, 500, 137]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "HR2"
+	      SID		      377
+	      Position		      [510, 283, 540, 297]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "AWGN\nChannel"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "AWGN\nChannel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel3"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      DstBlock		      "Add"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel2"
+	      SrcPort		      1
+	      Points		      [50, 0; 0, -75]
+	      DstBlock		      "Add"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel1"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -15]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+	      SrcPort		      1
+	      Points		      [65, 0]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+	      SrcPort		      2
+	      Points		      [150, 0; 0, 205]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel1"
+	      SrcPort		      2
+	      Points		      [120, 0; 0, 125]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel2"
+	      SrcPort		      2
+	      Points		      [105, 0; 0, 45]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel3"
+	      SrcPort		      2
+	      Points		      [170, 0]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Matrix\nConcatenate"
+	      SrcPort		      1
+	      DstBlock		      "Mean"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mean"
+	      SrcPort		      1
+	      DstBlock		      "HR2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ToR3"
+	  SID			  380
+	  Ports			  [4, 2]
+	  Position		  [285, 345, 340, 480]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "ToR3"
+	    Location		    [509, 193, 1131, 580]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      381
+	      Position		      [25, 48, 55, 62]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      SID		      382
+	      Position		      [30, 138, 60, 152]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      SID		      383
+	      Position		      [30, 228, 60, 242]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      SID		      384
+	      Position		      [30, 323, 60, 337]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "AWGN\nChannel"
+	      SID		      385
+	      Ports		      [1, 1]
+	      Position		      [350, 101, 445, 159]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/AWGN\nChannel"
+	      SourceType	      "AWGN Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      seed		      "310"
+	      noiseMode		      "Signal to noise ratio  (SNR)"
+	      EbNodB		      "10"
+	      EsNodB		      "10"
+	      SNRdB		      "snr"
+	      bitsPerSym	      "4"
+	      Ps		      "0.25"
+	      Tsym		      "1e-6"
+	      variance		      "1"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      386
+	      Ports		      [4, 1]
+	      Position		      [260, 72, 300, 188]
+	      Inputs		      "++++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Concatenate
+	      Name		      "Matrix\nConcatenate"
+	      SID		      387
+	      Ports		      [4, 1]
+	      Position		      [370, 269, 425, 311]
+	      NumInputs		      "4"
+	      Mode		      "Multidimensional array"
+	      ConcatenateDimension    "2"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Mean"
+	      SID		      424
+	      Ports		      [1, 1]
+	      Position		      [445, 270, 495, 310]
+	      LibraryVersion	      "1.485"
+	      DialogController	      "dspDDGCreate"
+	      DialogControllerArgs    "DataTag3"
+	      SourceBlock	      "dspstat3/Mean"
+	      SourceType	      "Mean"
+	      run		      off
+	      reset_popup	      "None"
+	      directionMode	      "Each column"
+	      dimension		      "1"
+	      treatSBRowAsCol	      on
+	      roiEnable		      off
+	      roiType		      "Rectangles"
+	      roiPortion	      "Entire ROI"
+	      roiOutput		      "Individual statistics for each ROI"
+	      roiFlag		      off
+	      additionalParams	      off
+	      allowOverrides	      on
+	      outputMode	      "Same as accumulator"
+	      outputWordLength	      "32"
+	      outputFracLength	      "30"
+	      outputDataTypeStr	      "Inherit: Same as accumulator"
+	      outputLastDataTypeStr   "Inherit: Same as accumulator"
+	      outputMin		      "[]"
+	      outputMax		      "[]"
+	      accumMode		      "Same as input"
+	      accumWordLength	      "32"
+	      accumFracLength	      "30"
+	      accumDataTypeStr	      "Inherit: Same as input"
+	      accumLastDataTypeStr    "Inherit: Same as input"
+	      roundingMode	      "Floor"
+	      overflowMode	      off
+	      LockScale		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel"
+	      SID		      388
+	      Ports		      [1, 2]
+	      Position		      [80, 25, 175, 85]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "34567"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel1"
+	      SID		      389
+	      Ports		      [1, 2]
+	      Position		      [85, 115, 180, 175]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "39876"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel2"
+	      SID		      390
+	      Ports		      [1, 2]
+	      Position		      [85, 205, 180, 265]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "36512"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel3"
+	      SID		      391
+	      Ports		      [1, 2]
+	      Position		      [85, 300, 180, 360]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "31111"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      392
+	      Position		      [470, 123, 500, 137]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "HR3"
+	      SID		      393
+	      Position		      [515, 278, 545, 292]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Matrix\nConcatenate"
+	      SrcPort		      1
+	      DstBlock		      "Mean"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel3"
+	      SrcPort		      2
+	      Points		      [170, 0]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel2"
+	      SrcPort		      2
+	      Points		      [105, 0; 0, 45]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel1"
+	      SrcPort		      2
+	      Points		      [120, 0; 0, 125]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+	      SrcPort		      2
+	      Points		      [150, 0; 0, 205]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+	      SrcPort		      1
+	      Points		      [65, 0]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel1"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -15]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel2"
+	      SrcPort		      1
+	      Points		      [50, 0; 0, -75]
+	      DstBlock		      "Add"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel3"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      DstBlock		      "Add"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "AWGN\nChannel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "AWGN\nChannel"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mean"
+	      SrcPort		      1
+	      DstBlock		      "HR3"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ToR4"
+	  SID			  394
+	  Ports			  [4, 2]
+	  Position		  [285, 515, 340, 650]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "ToR4"
+	    Location		    [509, 193, 1131, 580]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      395
+	      Position		      [25, 48, 55, 62]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      SID		      396
+	      Position		      [30, 138, 60, 152]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      SID		      397
+	      Position		      [30, 228, 60, 242]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      SID		      398
+	      Position		      [30, 323, 60, 337]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "AWGN\nChannel"
+	      SID		      399
+	      Ports		      [1, 1]
+	      Position		      [350, 101, 445, 159]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/AWGN\nChannel"
+	      SourceType	      "AWGN Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      seed		      "310"
+	      noiseMode		      "Signal to noise ratio  (SNR)"
+	      EbNodB		      "10"
+	      EsNodB		      "10"
+	      SNRdB		      "snr"
+	      bitsPerSym	      "4"
+	      Ps		      "0.25"
+	      Tsym		      "1e-6"
+	      variance		      "1"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      400
+	      Ports		      [4, 1]
+	      Position		      [260, 72, 300, 188]
+	      Inputs		      "++++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Concatenate
+	      Name		      "Matrix\nConcatenate"
+	      SID		      401
+	      Ports		      [4, 1]
+	      Position		      [370, 269, 425, 311]
+	      NumInputs		      "4"
+	      Mode		      "Multidimensional array"
+	      ConcatenateDimension    "2"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Mean"
+	      SID		      425
+	      Ports		      [1, 1]
+	      Position		      [445, 270, 500, 310]
+	      LibraryVersion	      "1.485"
+	      DialogController	      "dspDDGCreate"
+	      DialogControllerArgs    "DataTag4"
+	      SourceBlock	      "dspstat3/Mean"
+	      SourceType	      "Mean"
+	      run		      off
+	      reset_popup	      "None"
+	      directionMode	      "Each column"
+	      dimension		      "1"
+	      treatSBRowAsCol	      on
+	      roiEnable		      off
+	      roiType		      "Rectangles"
+	      roiPortion	      "Entire ROI"
+	      roiOutput		      "Individual statistics for each ROI"
+	      roiFlag		      off
+	      additionalParams	      off
+	      allowOverrides	      on
+	      outputMode	      "Same as accumulator"
+	      outputWordLength	      "32"
+	      outputFracLength	      "30"
+	      outputDataTypeStr	      "Inherit: Same as accumulator"
+	      outputLastDataTypeStr   "Inherit: Same as accumulator"
+	      outputMin		      "[]"
+	      outputMax		      "[]"
+	      accumMode		      "Same as input"
+	      accumWordLength	      "32"
+	      accumFracLength	      "30"
+	      accumDataTypeStr	      "Inherit: Same as input"
+	      accumLastDataTypeStr    "Inherit: Same as input"
+	      roundingMode	      "Floor"
+	      overflowMode	      off
+	      LockScale		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel"
+	      SID		      402
+	      Ports		      [1, 2]
+	      Position		      [80, 25, 175, 85]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "55555"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel1"
+	      SID		      403
+	      Ports		      [1, 2]
+	      Position		      [85, 115, 180, 175]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "66666"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel2"
+	      SID		      404
+	      Ports		      [1, 2]
+	      Position		      [85, 205, 180, 265]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "77777"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Multipath Rayleigh\nFading Channel3"
+	      SID		      405
+	      Ports		      [1, 2]
+	      Position		      [85, 300, 180, 360]
+	      LibraryVersion	      "1.438"
+	      SourceBlock	      "commchan3/Multipath Rayleigh\nFading Channel"
+	      SourceType	      "Multipath Rayleigh Fading Channel"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      maxDopplerShift	      "40"
+	      spectrumType	      "Jakes"
+	      sigmaGaussian	      "1/sqrt(2)"
+	      coeffRounded	      "[1 -1.72 0.785]"
+	      freqMinMaxRJakes	      "[0 1]"
+	      freqMinMaxAJakes	      "[0 1]"
+	      sigmaGaussian1	      "1/sqrt(2)"
+	      sigmaGaussian2	      "1/sqrt(2)"
+	      centerFreqGaussian1     "0.0"
+	      centerFreqGaussian2     "0.0"
+	      gainGaussian1	      "0.5"
+	      gainGaussian2	      "0.5"
+	      coeffBell		      "9"
+	      dopplerSpectrum	      "doppler.jakes"
+	      pathDelays	      "[0]"
+	      avgPathGaindB	      "[0]"
+	      normalizePathGains      on
+	      seed		      "88888"
+	      enableProbe	      "0"
+	      openVisAtStart	      off
+	      outPathGains	      on
+	      outDelay		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      406
+	      Position		      [490, 123, 520, 137]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "HR4"
+	      SID		      407
+	      Position		      [525, 283, 555, 297]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "AWGN\nChannel"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Multipath Rayleigh\nFading Channel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "AWGN\nChannel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel3"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      DstBlock		      "Add"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel2"
+	      SrcPort		      1
+	      Points		      [50, 0; 0, -75]
+	      DstBlock		      "Add"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel1"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -15]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+	      SrcPort		      1
+	      Points		      [65, 0]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+	      SrcPort		      2
+	      Points		      [150, 0; 0, 205]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel1"
+	      SrcPort		      2
+	      Points		      [120, 0; 0, 125]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel2"
+	      SrcPort		      2
+	      Points		      [105, 0; 0, 45]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Multipath Rayleigh\nFading Channel3"
+	      SrcPort		      2
+	      Points		      [170, 0]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Matrix\nConcatenate"
+	      SrcPort		      1
+	      DstBlock		      "Mean"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mean"
+	      SrcPort		      1
+	      DstBlock		      "HR4"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "R1"
+	  SID			  145
+	  Position		  [580, 53, 610, 67]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "R2"
+	  SID			  208
+	  Position		  [595, 208, 625, 222]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "R3"
+	  SID			  209
+	  Position		  [595, 373, 625, 387]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "R4"
+	  SID			  210
+	  Position		  [605, 573, 635, 587]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "H"
+	  SID			  409
+	  Position		  [900, 308, 930, 322]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [160, 0]
+	  Branch {
+	    Points		    [50, 0]
+	    DstBlock		    "ToR1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 150]
+	    Branch {
+	      DstBlock		      "ToR2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 165]
+	      Branch {
+		DstBlock		"ToR3"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 170]
+		DstBlock		"ToR4"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  Points		  [95, 0]
+	  Branch {
+	    Points		    [115, 0]
+	    DstBlock		    "ToR1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 150]
+	    Branch {
+	      DstBlock		      "ToR2"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, 170]
+	      Branch {
+		Points			[115, 0]
+		DstBlock		"ToR3"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, 165]
+		DstBlock		"ToR4"
+		DstPort			2
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "ToR1"
+	  SrcPort		  1
+	  DstBlock		  "R1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In3"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  Branch {
+	    Points		    [165, 0]
+	    DstBlock		    "ToR1"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, 150; 5, 0]
+	    Branch {
+	      DstBlock		      "ToR2"
+	      DstPort		      3
+	    }
+	    Branch {
+	      Points		      [0, 165]
+	      Branch {
+		DstBlock		"ToR3"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, 170]
+		DstBlock		"ToR4"
+		DstPort			3
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "In4"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    Points		    [205, 0]
+	    DstBlock		    "ToR1"
+	    DstPort		    4
+	  }
+	  Branch {
+	    Points		    [0, 150]
+	    Branch {
+	      DstBlock		      "ToR2"
+	      DstPort		      4
+	    }
+	    Branch {
+	      Points		      [0, 165]
+	      Branch {
+		DstBlock		"ToR3"
+		DstPort			4
+	      }
+	      Branch {
+		Points			[0, 170]
+		DstBlock		"ToR4"
+		DstPort			4
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "ToR2"
+	  SrcPort		  1
+	  DstBlock		  "R2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ToR3"
+	  SrcPort		  1
+	  DstBlock		  "R3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ToR4"
+	  SrcPort		  1
+	  Points		  [60, 0; 0, 30]
+	  DstBlock		  "R4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ToR1"
+	  SrcPort		  2
+	  Points		  [380, 0]
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ToR2"
+	  SrcPort		  2
+	  Points		  [335, 0; 0, 20]
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "ToR3"
+	  SrcPort		  2
+	  Points		  [320, 0; 0, -115]
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "ToR4"
+	  SrcPort		  2
+	  Points		  [370, 0; 0, -255]
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Matrix\nConcatenate"
+	  SrcPort		  1
+	  DstBlock		  "H"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      SID		      426
+      Ports		      [1, 3]
+      Position		      [345, 261, 350, 299]
+      ShowName		      off
+      Outputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      SID		      427
+      Ports		      [1]
+      Position		      [495, 247, 595, 313]
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      SID		      431
+      Ports		      [1]
+      Position		      [285, 505, 650, 635]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error Rate\nCalculation"
+      SID		      262
+      Ports		      [2, 1]
+      Position		      [180, 252, 255, 303]
+      LibraryVersion	      "1.308"
+      SourceBlock	      "commsink2/Error Rate\nCalculation"
+      SourceType	      "Error Rate Calculation"
+      N			      "0"
+      st_delay		      "0"
+      cp_mode		      "Entire frame"
+      subframe		      "[]"
+      PMode		      "Port"
+      WsName		      "ErrorVec"
+      RsMode2		      off
+      stop		      on
+      numErr		      "1e6"
+      maxBits		      "1e6"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "M-PSK\nDemodulator\nBaseband"
+      SID		      15
+      Ports		      [1, 1]
+      Position		      [165, 380, 240, 430]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.534"
+      DialogController	      "commDDGCreate"
+      DialogControllerArgs    "DataTag5"
+      SourceBlock	      "commdigbbndpm3/M-PSK\nDemodulator\nBaseband"
+      SourceType	      "M-PSK Demodulator Baseband"
+      M			      "16"
+      Ph		      "pi/16"
+      Dec		      "Gray"
+      Mapping		      "[0:7]"
+      OutType		      "Bit"
+      DecType		      "Hard decision"
+      VarSource		      "Dialog"
+      Variance		      "1"
+      outDtype1		      "boolean"
+      outDtype2		      "Inherit via internal rule"
+      derotateFactorDTMode    "Same word length as input"
+      derotateFactorWordLen   "16"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "M-PSK\nModulator\nBaseband"
+      SID		      14
+      Ports		      [1, 1]
+      Position		      [170, 99, 245, 151]
+      LibraryVersion	      "1.534"
+      DialogController	      "commDDGCreate"
+      DialogControllerArgs    "DataTag6"
+      SourceBlock	      "commdigbbndpm3/M-PSK\nModulator\nBaseband"
+      SourceType	      "M-PSK Modulator Baseband"
+      M			      "16"
+      InType		      "Bit"
+      Enc		      "Gray"
+      Mapping		      "[0:7]"
+      Ph		      "pi/16"
+      outDtype		      "double"
+      outWordLen	      "16"
+      outUDDataType	      "sfix(16)"
+      outFracLenMode	      "Best precision"
+      outFracLen	      "15"
+    }
+    Block {
+      BlockType		      Math
+      Name		      "Math\nFunction"
+      SID		      419
+      Ports		      [1, 1]
+      Position		      [920, 545, 950, 575]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      Operator		      "magnitude^2"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Mean"
+      SID		      434
+      Ports		      [1, 1]
+      Position		      [755, 495, 795, 535]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.485"
+      DialogController	      "dspDDGCreate"
+      DialogControllerArgs    "DataTag7"
+      SourceBlock	      "dspstat3/Mean"
+      SourceType	      "Mean"
+      run		      off
+      reset_popup	      "None"
+      directionMode	      "Entire input"
+      dimension		      "1"
+      treatSBRowAsCol	      on
+      roiEnable		      off
+      roiType		      "Rectangles"
+      roiPortion	      "Entire ROI"
+      roiOutput		      "Individual statistics for each ROI"
+      roiFlag		      off
+      additionalParams	      off
+      allowOverrides	      on
+      outputMode	      "Same as accumulator"
+      outputWordLength	      "32"
+      outputFracLength	      "30"
+      outputDataTypeStr	      "Inherit: Same as accumulator"
+      outputLastDataTypeStr   "Inherit: Same as accumulator"
+      outputMin		      "[]"
+      outputMax		      "[]"
+      accumMode		      "Same as input"
+      accumWordLength	      "32"
+      accumFracLength	      "30"
+      accumDataTypeStr	      "Inherit: Same as input"
+      accumLastDataTypeStr    "Inherit: Same as input"
+      roundingMode	      "Floor"
+      overflowMode	      off
+      LockScale		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Mux"
+      SID		      231
+      Ports		      [4, 1]
+      Position		      [495, 347, 545, 463]
+      BlockMirror	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Mux"
+	Location		[407, 466, 890, 659]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  232
+	  Position		  [330, 58, 360, 72]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  SID			  233
+	  Position		  [330, 88, 360, 102]
+	  BlockMirror		  on
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In3"
+	  SID			  235
+	  Position		  [330, 118, 360, 132]
+	  BlockMirror		  on
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In4"
+	  SID			  236
+	  Position		  [330, 148, 360, 162]
+	  BlockMirror		  on
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Concatenate
+	  Name			  "Matrix\nConcatenate"
+	  SID			  229
+	  Ports			  [4, 1]
+	  Position		  [200, 49, 280, 171]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  NumInputs		  "4"
+	  Mode			  "Multidimensional array"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  234
+	  Position		  [45, 103, 75, 117]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Matrix\nConcatenate"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In3"
+	  SrcPort		  1
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "In4"
+	  SrcPort		  1
+	  DstBlock		  "Matrix\nConcatenate"
+	  DstPort		  4
+	}
+      }
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      SID		      428
+      Ports		      [3, 1]
+      Position		      [440, 261, 445, 299]
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Receiver Matrix"
+      SID		      220
+      Ports		      [4, 4]
+      Position		      [680, 342, 740, 468]
+      BlockMirror	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Receiver Matrix"
+	Location		[617, 379, 982, 790]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  221
+	  Position		  [160, 48, 190, 62]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  SID			  223
+	  Position		  [160, 143, 190, 157]
+	  BlockMirror		  on
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In3"
+	  SID			  225
+	  Position		  [160, 233, 190, 247]
+	  BlockMirror		  on
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In4"
+	  SID			  227
+	  Position		  [160, 328, 190, 342]
+	  BlockMirror		  on
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape1"
+	  SID			  415
+	  Ports			  [1, 1]
+	  Position		  [85, 138, 115, 162]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  OutputDimensionality	  "Row vector (2-D)"
+	  OutputDimensions	  "[100,4]"
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape2"
+	  SID			  414
+	  Ports			  [1, 1]
+	  Position		  [90, 43, 120, 67]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  OutputDimensionality	  "Row vector (2-D)"
+	  OutputDimensions	  "[100,4]"
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape3"
+	  SID			  416
+	  Ports			  [1, 1]
+	  Position		  [85, 228, 115, 252]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  OutputDimensionality	  "Row vector (2-D)"
+	  OutputDimensions	  "[100,4]"
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape4"
+	  SID			  417
+	  Ports			  [1, 1]
+	  Position		  [85, 323, 115, 347]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  OutputDimensionality	  "Row vector (2-D)"
+	  OutputDimensions	  "[100,4]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  222
+	  Position		  [30, 48, 60, 62]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  SID			  224
+	  Position		  [30, 143, 60, 157]
+	  BlockMirror		  on
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  SID			  226
+	  Position		  [25, 233, 55, 247]
+	  BlockMirror		  on
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out4"
+	  SID			  228
+	  Position		  [25, 328, 55, 342]
+	  BlockMirror		  on
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Reshape2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In3"
+	  SrcPort		  1
+	  DstBlock		  "Reshape3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In4"
+	  SrcPort		  1
+	  DstBlock		  "Reshape4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  DstBlock		  "Reshape1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reshape2"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reshape1"
+	  SrcPort		  1
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reshape3"
+	  SrcPort		  1
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reshape4"
+	  SrcPort		  1
+	  DstBlock		  "Out4"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Seperate pilot"
+      SID		      238
+      Ports		      [1, 2]
+      Position		      [435, 375, 475, 435]
+      BlockMirror	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Seperate pilot"
+	Location		[412, 388, 986, 629]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  240
+	  Position		  [395, 118, 425, 132]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Multiport\nSelector"
+	  SID			  270
+	  Ports			  [1, 2]
+	  Position		  [280, 103, 360, 147]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.460"
+	  SourceBlock		  "dspindex/Multiport\nSelector"
+	  SourceType		  "Multiport Selector"
+	  rowsOrCols		  "Columns"
+	  idxCellArray		  "{[1:96],[97:100]}"
+	  idxErrMode		  "Clip Index"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  239
+	  Position		  [25, 43, 55, 57]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  SID			  241
+	  Position		  [25, 173, 55, 187]
+	  BlockMirror		  on
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Multiport\nSelector"
+	  SrcPort		  1
+	  Points		  [-200, 0; 0, -65]
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Multiport\nSelector"
+	  SrcPort		  2
+	  Points		  [0, 30; -200, 0; 0, 15]
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Multiport\nSelector"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem"
+      SID		      257
+      Ports		      [2, 1]
+      Position		      [290, 375, 330, 435]
+      BlockMirror	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Subsystem"
+	Location		[2, 82, 1262, 747]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  261
+	  Position		  [800, 418, 830, 432]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  SID			  260
+	  Position		  [800, 278, 830, 292]
+	  BlockMirror		  on
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  FrameConversion
+	  Name			  "Frame Conversion"
+	  SID			  277
+	  Ports			  [1, 1]
+	  Position		  [160, 340, 215, 380]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  SID			  254
+	  Ports			  [2, 1]
+	  Position		  [305, 341, 355, 374]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Multiplication	  "Matrix(*)"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Pseudoinverse"
+	  SID			  369
+	  Ports			  [1, 1]
+	  Position		  [645, 255, 720, 315]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.29"
+	  SourceBlock		  "dspinverses/Pseudoinverse"
+	  SourceType		  "Pseudoinverse"
+	  wanterr		  off
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape"
+	  SID			  276
+	  Ports			  [1, 1]
+	  Position		  [240, 348, 270, 372]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  OutputDimensionality	  "Column vector (2-D)"
+	  OutputDimensions	  "[4,96]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  258
+	  Position		  [85, 353, 115, 367]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Pseudoinverse"
+	  SrcPort		  1
+	  Points		  [-250, 0; 0, 65]
+	  DstBlock		  "Product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Reshape"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [-210, 0; 0, -60]
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Reshape"
+	  SrcPort		  1
+	  DstBlock		  "Frame Conversion"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Frame Conversion"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  DstBlock		  "Pseudoinverse"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      SID		      418
+      Ports		      [2, 1]
+      Position		      [1030, 540, 1050, 560]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      SID		      429
+      Ports		      [1]
+      Position		      [515, 190, 575, 220]
+      VariableName	      "Perr"
+      MaxDataPoints	      "100"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      SID		      433
+      Ports		      [1]
+      Position		      [670, 500, 730, 530]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      VariableName	      "MSE"
+      MaxDataPoints	      "100"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Trans Matrix"
+      SID		      211
+      Ports		      [4, 4]
+      Position		      [685, 71, 735, 174]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Trans Matrix"
+	Location		[607, 159, 1134, 610]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  212
+	  Position		  [35, 48, 65, 62]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  SID			  214
+	  Position		  [35, 138, 65, 152]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In3"
+	  SID			  216
+	  Position		  [25, 248, 55, 262]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In4"
+	  SID			  218
+	  Position		  [25, 368, 55, 382]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape"
+	  SID			  410
+	  Ports			  [1, 1]
+	  Position		  [195, 43, 225, 67]
+	  OutputDimensionality	  "Column vector (2-D)"
+	  OutputDimensions	  "[100,4]"
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape1"
+	  SID			  411
+	  Ports			  [1, 1]
+	  Position		  [195, 133, 225, 157]
+	  OutputDimensionality	  "Column vector (2-D)"
+	  OutputDimensions	  "[100,4]"
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape2"
+	  SID			  412
+	  Ports			  [1, 1]
+	  Position		  [195, 243, 225, 267]
+	  OutputDimensionality	  "Column vector (2-D)"
+	  OutputDimensions	  "[100,4]"
+	}
+	Block {
+	  BlockType		  Reshape
+	  Name			  "Reshape3"
+	  SID			  413
+	  Ports			  [1, 1]
+	  Position		  [195, 363, 225, 387]
+	  OutputDimensionality	  "Column vector (2-D)"
+	  OutputDimensions	  "[100,4]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  213
+	  Position		  [270, 48, 300, 62]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  SID			  215
+	  Position		  [270, 138, 300, 152]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  SID			  217
+	  Position		  [270, 248, 300, 262]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out4"
+	  SID			  219
+	  Position		  [260, 368, 290, 382]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Reshape"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In3"
+	  SrcPort		  1
+	  DstBlock		  "Reshape2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In4"
+	  SrcPort		  1
+	  DstBlock		  "Reshape3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  DstBlock		  "Reshape1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reshape"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reshape1"
+	  SrcPort		  1
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reshape2"
+	  SrcPort		  1
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reshape3"
+	  SrcPort		  1
+	  DstBlock		  "Out4"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "ZF Estimate"
+      SID		      248
+      Ports		      [1, 1]
+      Position		      [365, 435, 405, 495]
+      BlockMirror	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"ZF Estimate"
+	Location		[6, 282, 1266, 947]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  249
+	  Position		  [445, 33, 475, 47]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  242
+	  Position		  [425, 165, 455, 195]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "[1 0 0 0;0 1 0 0;0 0 1 0;0 0 0 1]"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  SampleTime		  "1e-4"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  SID			  247
+	  Ports			  [2, 1]
+	  Position		  [80, 31, 130, 64]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Multiplication	  "Matrix(*)"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Pseudoinverse"
+	  SID			  367
+	  Ports			  [1, 1]
+	  Position		  [265, 150, 340, 210]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.29"
+	  SourceBlock		  "dspinverses/Pseudoinverse"
+	  SourceType		  "Pseudoinverse"
+	  wanterr		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  250
+	  Position		  [25, 43, 55, 57]
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Product2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Pseudoinverse"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pseudoinverse"
+	  SrcPort		  1
+	  Points		  [-50, 0; 0, -125]
+	  DstBlock		  "Product2"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Bernoulli Binary\nGenerator"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"M-PSK\nModulator\nBaseband"
+	DstPort			1
+      }
+      Branch {
+	Points			[-20, 0; 0, 140]
+	DstBlock		"Error Rate\nCalculation"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "M-PSK\nModulator\nBaseband"
+      SrcPort		      1
+      DstBlock		      "Add pilot"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Add pilot"
+      SrcPort		      1
+      DstBlock		      "1:4 Demux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "1:4 Demux"
+      SrcPort		      1
+      DstBlock		      "Trans Matrix"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "1:4 Demux"
+      SrcPort		      2
+      DstBlock		      "Trans Matrix"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "1:4 Demux"
+      SrcPort		      3
+      DstBlock		      "Trans Matrix"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "1:4 Demux"
+      SrcPort		      4
+      DstBlock		      "Trans Matrix"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Trans Matrix"
+      SrcPort		      1
+      Points		      [205, 0]
+      DstBlock		      "Channal Matrix"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Trans Matrix"
+      SrcPort		      3
+      Points		      [265, 0]
+      DstBlock		      "Channal Matrix"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Channal Matrix"
+      SrcPort		      1
+      Points		      [0, 55]
+      DstBlock		      "Receiver Matrix"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Trans Matrix"
+      SrcPort		      2
+      Points		      [235, 0]
+      DstBlock		      "Channal Matrix"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Trans Matrix"
+      SrcPort		      4
+      Points		      [295, 0]
+      DstBlock		      "Channal Matrix"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Channal Matrix"
+      SrcPort		      2
+      Points		      [0, 85]
+      DstBlock		      "Receiver Matrix"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Channal Matrix"
+      SrcPort		      3
+      Points		      [0, 115]
+      DstBlock		      "Receiver Matrix"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Channal Matrix"
+      SrcPort		      4
+      Points		      [0, 145]
+      DstBlock		      "Receiver Matrix"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Receiver Matrix"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Receiver Matrix"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Receiver Matrix"
+      SrcPort		      3
+      DstBlock		      "Mux"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Receiver Matrix"
+      SrcPort		      4
+      DstBlock		      "Mux"
+      DstPort		      4
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Seperate pilot"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Seperate pilot"
+      SrcPort		      2
+      Points		      [-10, 0]
+      DstBlock		      "ZF Estimate"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "ZF Estimate"
+      SrcPort		      1
+      Points		      [-15, 0]
+      Branch {
+	DstBlock		"Subsystem"
+	DstPort			2
+      }
+      Branch {
+	Points			[-15, 0; 0, 170; 710, 0]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Seperate pilot"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Subsystem"
+      SrcPort		      1
+      DstBlock		      "M-PSK\nDemodulator\nBaseband"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "M-PSK\nDemodulator\nBaseband"
+      SrcPort		      1
+      Points		      [-50, 0; 0, -115]
+      DstBlock		      "Error Rate\nCalculation"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Error Rate\nCalculation"
+      SrcPort		      1
+      DstBlock		      "Demux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Channal Matrix"
+      SrcPort		      5
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [0, 10]
+      DstBlock		      "Math\nFunction"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Math\nFunction"
+      SrcPort		      1
+      Points		      [-90, 0]
+      Branch {
+	Points			[0, -45]
+	DstBlock		"Mean"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 10]
+	DstBlock		"Display1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"Mux1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -65]
+	DstBlock		"To Workspace"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      3
+      DstBlock		      "Mux1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Mean"
+      SrcPort		      1
+      DstBlock		      "To Workspace1"
+      DstPort		      1
+    }
+  }
+}
+MatData {
+  NumRecords		  8
+  DataRecord {
+    Tag			    DataTag7
+    Data		    "  %)30     .    L     8    (     0         %    \"     $    \"     0         .    ,     8    (    !    "
+    "      %    \"     $    $     0         0  0 365A;@X   !(    !@    @    $          4    (     0   !4    !         !"
+    "     5    4U!#56YI9FEE9$9I>'!T1&QG1$1'    "
+  }
+  DataRecord {
+    Tag			    DataTag6
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    -     0         0    #0   $U04TM-;V1U;&%T;W(    "
+  }
+  DataRecord {
+    Tag			    DataTag5
+    Data		    "  %)30     .    <     8    (     0         %    \"     $    !     0         .    0     8    (    !     "
+    "     %    \"     $    /     0         0    #P   $U04TM$96UO9'5L871O<@ "
+  }
+  DataRecord {
+    Tag			    DataTag4
+    Data		    "  %)30     .    L     8    (     0         %    \"     $    \"     0         .    ,     8    (    !    "
+    "      %    \"     $    $     0         0  0 365A;@X   !(    !@    @    $          4    (     0   !4    !         !"
+    "     5    4U!#56YI9FEE9$9I>'!T1&QG1$1'    "
+  }
+  DataRecord {
+    Tag			    DataTag3
+    Data		    "  %)30     .    L     8    (     0         %    \"     $    \"     0         .    ,     8    (    !    "
+    "      %    \"     $    $     0         0  0 365A;@X   !(    !@    @    $          4    (     0   !4    !         !"
+    "     5    4U!#56YI9FEE9$9I>'!T1&QG1$1'    "
+  }
+  DataRecord {
+    Tag			    DataTag2
+    Data		    "  %)30     .    L     8    (     0         %    \"     $    \"     0         .    ,     8    (    !    "
+    "      %    \"     $    $     0         0  0 365A;@X   !(    !@    @    $          4    (     0   !4    !         !"
+    "     5    4U!#56YI9FEE9$9I>'!T1&QG1$1'    "
+  }
+  DataRecord {
+    Tag			    DataTag1
+    Data		    "  %)30     .    L     8    (     0         %    \"     $    \"     0         .    ,     8    (    !    "
+    "      %    \"     $    $     0         0  0 365A;@X   !(    !@    @    $          4    (     0   !4    !         !"
+    "     5    4U!#56YI9FEE9$9I>'!T1&QG1$1'    "
+  }
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    >     8    (     0         %    \"     $    !     0         .    2     8    (    !     "
+    "     %    \"     $    2     0         0    $@   $)E<FYO=6QL:4)I;F%R>4=E;@        "
+  }
+}

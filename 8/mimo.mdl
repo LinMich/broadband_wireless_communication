@@ -1,0 +1,2536 @@
+Model {
+  Name			  "mimo"
+  Version		  6.6
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.4"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "GBK"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Dec 13 00:26:26 2007"
+  Creator		  "a"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "a"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Dec 13 00:35:27 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:4>"
+  ConfigurationManager	  "None"
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  AccelVerboseBuild	  off
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.2.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.2.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.2.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.2.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.2.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  StrictBusMsg		  "Warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.2.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.2.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.2.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.2.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlComp"
+"liant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.2.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  11
+	  Description		  "HDL Coder custom configuration component"
+	  Version		  "1.2.0"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Concatenate
+      NumInputs		      "2"
+      ConcatenateDimension    "1"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      FrameConversion
+      OutFrame		      "Frame based"
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Configuration Parameters: Optimiza"
+"tion)"
+      LogicDataType	      "uint(8)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reshape
+      OutputDimensionality    "1-D array"
+      OutputDimensions	      "[1,1]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "mimo"
+    Location		    [2, 78, 1261, 732]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "AWGN\nChannel"
+      Ports		      [1, 1]
+      Position		      [1115, 124, 1190, 166]
+      SourceBlock	      "commchan3/AWGN\nChannel"
+      SourceType	      "AWGN Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      seed		      "67"
+      noiseMode		      "Signal to noise ratio  (SNR)"
+      EbNodB		      "20"
+      EsNodB		      "10"
+      SNRdB		      "0"
+      bitsPerSym	      "1"
+      Ps		      "1"
+      Tsym		      "1e-3/3"
+      variance		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "AWGN\nChannel1"
+      Ports		      [1, 1]
+      Position		      [1130, 489, 1205, 531]
+      SourceBlock	      "commchan3/AWGN\nChannel"
+      SourceType	      "AWGN Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      seed		      "68"
+      noiseMode		      "Signal to noise ratio  (SNR)"
+      EbNodB		      "20"
+      EsNodB		      "10"
+      SNRdB		      "0"
+      bitsPerSym	      "1"
+      Ps		      "1"
+      Tsym		      "1e-3/3"
+      variance		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "AWGN\nChannel3"
+      Ports		      [1, 1]
+      Position		      [1135, 874, 1210, 916]
+      SourceBlock	      "commchan3/AWGN\nChannel"
+      SourceType	      "AWGN Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      seed		      "69"
+      noiseMode		      "Signal to noise ratio  (SNR)"
+      EbNodB		      "20"
+      EsNodB		      "10"
+      SNRdB		      "0"
+      bitsPerSym	      "1"
+      Ps		      "1"
+      Tsym		      "1e-3/3"
+      variance		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "AWGN\nChannel4"
+      Ports		      [1, 1]
+      Position		      [1150, 1219, 1225, 1261]
+      SourceBlock	      "commchan3/AWGN\nChannel"
+      SourceType	      "AWGN Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      seed		      "70"
+      noiseMode		      "Signal to noise ratio  (SNR)"
+      EbNodB		      "20"
+      EsNodB		      "10"
+      SNRdB		      "0"
+      bitsPerSym	      "1"
+      Ps		      "1"
+      Tsym		      "1e-3/3"
+      variance		      "1"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Add"
+      Ports		      [4, 1]
+      Position		      [1000, 68, 1085, 217]
+      Inputs		      "4"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutScaling	      "2^-10"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Add1"
+      Ports		      [4, 1]
+      Position		      [1020, 436, 1105, 579]
+      Inputs		      "4"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutScaling	      "2^-10"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Add2"
+      Ports		      [4, 1]
+      Position		      [1025, 821, 1110, 964]
+      Inputs		      "4"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutScaling	      "2^-10"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Add3"
+      Ports		      [4, 1]
+      Position		      [1045, 1166, 1130, 1309]
+      Inputs		      "4"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutScaling	      "2^-10"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "BPSK\nModulator\nBaseband"
+      Ports		      [1, 1]
+      Position		      [375, 646, 445, 694]
+      SourceBlock	      "commdigbbndpm2/BPSK\nModulator\nBaseband"
+      SourceType	      "BPSK Modulator Baseband"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Ph		      "0"
+      numSamp		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Bernoulli Binary\nGenerator"
+      Ports		      [0, 1]
+      Position		      [45, 353, 125, 397]
+      DialogController	      "commDDGCreate"
+      DialogControllerArgs    "DataTag0"
+      FontName		      "Arial"
+      SourceBlock	      "commrandsrc2/Bernoulli Binary\nGenerator"
+      SourceType	      "Bernoulli Binary Generator"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      P			      "0.5"
+      seed		      "61"
+      Ts		      "1e-6/16/2"
+      frameBased	      on
+      sampPerFrame	      "32"
+      orient		      off
+      outDataType	      "double"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "DSP\nConstant"
+      Ports		      [0, 1]
+      Position		      [325, 654, 360, 686]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspsrcs4/DSP\nConstant"
+      SourceType	      "DSP Constant"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Value		      "0"
+      SampleMode	      "Discrete"
+      discreteOutput	      "Frame-based"
+      continuousOutput	      "Sample-based"
+      sampTime		      "1e-3/64"
+      framePeriod	      "1e-6"
+      additionalParams	      off
+      allowOverrides	      on
+      dataType		      "Inherit from 'Constant value'"
+      isSigned		      on
+      wordLen		      "16"
+      udDataType	      "sfix(16)"
+      fracBitsMode	      "Best precision"
+      numFracBits	      "15"
+      InterpretAs1D	      "-inf"
+      Ts		      "-inf"
+      FramebasedOutput	      "-inf"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [940, 1431, 1030, 1529]
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error Rate\nCalculation"
+      Ports		      [2, 1]
+      Position		      [780, 1451, 855, 1504]
+      SourceBlock	      "commsink2/Error Rate\nCalculation"
+      SourceType	      "Error Rate Calculation"
+      N			      "0"
+      st_delay		      "0"
+      cp_mode		      "Entire frame"
+      subframe		      "[]"
+      PMode		      "Port"
+      WsName		      "ErrorVec"
+      RsMode2		      off
+      stop		      on
+      numErr		      "1e6"
+      maxBits		      "1e6"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Frame Status\nConversion"
+      Ports		      [1, 1]
+      Position		      [520, 1477, 570, 1513]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspobslib/Frame Status\nConversion"
+      SourceType	      "Frame Status Conversion"
+      ShowPortLabels	      "none"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      growRefPort	      off
+      outframe		      "Frame-based"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From1"
+      Position		      [20, 1386, 60, 1414]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "H1"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From2"
+      Position		      [675, 1386, 715, 1414]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "TX"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From3"
+      Position		      [20, 1476, 60, 1504]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "R1"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto"
+      Position		      [165, 475, 205, 505]
+      NamePlacement	      "alternate"
+      GotoTag		      "TX"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto1"
+      Position		      [1500, 685, 1540, 715]
+      NamePlacement	      "alternate"
+      GotoTag		      "H1"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto2"
+      Position		      [1505, 865, 1545, 895]
+      NamePlacement	      "alternate"
+      GotoTag		      "R1"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation1"
+      Ports		      [2, 1]
+      Position		      [500, 398, 550, 442]
+      Mode		      "Multidimensional array"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation10"
+      Ports		      [4, 1]
+      Position		      [1025, 614, 1100, 686]
+      NumInputs		      "4"
+      Mode		      "Multidimensional array"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation11"
+      Ports		      [4, 1]
+      Position		      [1025, 724, 1100, 796]
+      NumInputs		      "4"
+      Mode		      "Multidimensional array"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation12"
+      Ports		      [4, 1]
+      Position		      [1045, 1054, 1120, 1126]
+      NumInputs		      "4"
+      Mode		      "Multidimensional array"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation2"
+      Ports		      [2, 1]
+      Position		      [510, 1053, 560, 1097]
+      Mode		      "Multidimensional array"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation3"
+      Ports		      [2, 1]
+      Position		      [510, 723, 560, 767]
+      Mode		      "Multidimensional array"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation4"
+      Ports		      [4, 1]
+      Position		      [1375, 803, 1455, 957]
+      NumInputs		      "4"
+      Mode		      "Multidimensional array"
+      ConcatenateDimension    "2"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation5"
+      Ports		      [4, 1]
+      Position		      [1255, 623, 1335, 777]
+      NumInputs		      "4"
+      Mode		      "Multidimensional array"
+      ConcatenateDimension    "2"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation6"
+      Ports		      [4, 1]
+      Position		      [385, 1443, 435, 1517]
+      NumInputs		      "4"
+      Mode		      "Multidimensional array"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation7"
+      Ports		      [2, 1]
+      Position		      [490, 73, 540, 117]
+      Mode		      "Multidimensional array"
+    }
+    Block {
+      BlockType		      Concatenate
+      Name		      "Matrix\nConcatenation9"
+      Ports		      [4, 1]
+      Position		      [1005, 244, 1080, 316]
+      NumInputs		      "4"
+      Mode		      "Multidimensional array"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel"
+      Ports		      [1, 1]
+      Position		      [610, 73, 690, 117]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "71"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel1"
+      Ports		      [1, 1]
+      Position		      [605, 398, 685, 442]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "75"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel10"
+      Ports		      [1, 1]
+      Position		      [605, 883, 685, 927]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "81"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel11"
+      Ports		      [1, 1]
+      Position		      [605, 968, 685, 1012]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "82"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel12"
+      Ports		      [1, 1]
+      Position		      [610, 1053, 690, 1097]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "83"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel13"
+      Ports		      [1, 1]
+      Position		      [610, 1133, 690, 1177]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "84"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel14"
+      Ports		      [1, 1]
+      Position		      [610, 1213, 690, 1257]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "85"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel15"
+      Ports		      [1, 1]
+      Position		      [610, 1298, 690, 1342]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "86"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel2"
+      Ports		      [1, 1]
+      Position		      [600, 478, 680, 522]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "76"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel3"
+      Ports		      [1, 1]
+      Position		      [600, 558, 680, 602]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "77"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel4"
+      Ports		      [1, 1]
+      Position		      [605, 153, 685, 197]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "72"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel5"
+      Ports		      [1, 1]
+      Position		      [605, 233, 685, 277]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0 ]"
+      gainVecdB		      "[0 ]"
+      normGain		      on
+      Seed		      "73"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel6"
+      Ports		      [1, 1]
+      Position		      [605, 318, 685, 362]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0 ]"
+      gainVecdB		      "[0 ]"
+      normGain		      on
+      Seed		      "74"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel7"
+      Ports		      [1, 1]
+      Position		      [600, 643, 680, 687]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "78"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel8"
+      Ports		      [1, 1]
+      Position		      [605, 723, 685, 767]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "79"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multipath Rayleigh\nFading Channel9"
+      Ports		      [1, 1]
+      Position		      [605, 803, 685, 847]
+      SourceBlock	      "commchan2/Multipath Rayleigh\nFading Channel"
+      SourceType	      "Multipath Rayleigh Fading Channel"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Fd		      "100"
+      simTs		      "1e-6/5"
+      delayVec		      "[0]"
+      gainVecdB		      "[0]"
+      normGain		      on
+      Seed		      "80"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector1"
+      Ports		      [1, 4]
+      Position		      [55, 648, 135, 692]
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1 5 9 13],[2 6 10 14],[3 7 11 15],[4 8 12 16"
+"] }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector10"
+      Ports		      [1, 2]
+      Position		      [735, 815, 795, 850]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector11"
+      Ports		      [1, 2]
+      Position		      [740, 900, 800, 935]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector12"
+      Ports		      [1, 2]
+      Position		      [745, 980, 805, 1015]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector13"
+      Ports		      [1, 2]
+      Position		      [750, 1070, 810, 1105]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector14"
+      Ports		      [1, 2]
+      Position		      [760, 1220, 820, 1255]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector15"
+      Ports		      [1, 2]
+      Position		      [755, 1135, 815, 1170]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector16"
+      Ports		      [1, 2]
+      Position		      [760, 1280, 820, 1315]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector17"
+      Ports		      [1, 2]
+      Position		      [730, 725, 790, 760]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector18"
+      Ports		      [1, 4]
+      Position		      [235, 1442, 315, 1518]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Columns"
+      idxCellArray	      "{ [1],[2],[3],[4] }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector2"
+      Ports		      [1, 2]
+      Position		      [730, 155, 790, 190]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector3"
+      Ports		      [1, 2]
+      Position		      [735, 235, 795, 270]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector4"
+      Ports		      [1, 2]
+      Position		      [735, 320, 795, 355]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector5"
+      Ports		      [1, 2]
+      Position		      [730, 400, 790, 435]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector6"
+      Ports		      [1, 2]
+      Position		      [730, 485, 790, 520]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector7"
+      Ports		      [1, 2]
+      Position		      [730, 75, 790, 110]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector8"
+      Ports		      [1, 2]
+      Position		      [730, 565, 790, 600]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Multiport\nSelector9"
+      Ports		      [1, 2]
+      Position		      [730, 640, 790, 675]
+      NamePlacement	      "alternate"
+      SourceBlock	      "dspindex/Multiport\nSelector"
+      SourceType	      "Multiport Selector"
+      rowsOrCols	      "Rows"
+      idxCellArray	      "{ [1:1:4],5 }"
+      idxErrMode	      "Clip Index"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "QPSK\nDemodulator\nBaseband"
+      Ports		      [1, 1]
+      Position		      [625, 1470, 700, 1520]
+      NamePlacement	      "alternate"
+      SourceBlock	      "commdigbbndpm2/QPSK\nDemodulator\nBaseband"
+      SourceType	      "QPSK Demodulator Baseband"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      OutType		      "Bit"
+      Dec		      "Binary"
+      Ph		      "pi/4"
+      numSamp		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "QPSK\nModulator\nBaseband"
+      Ports		      [1, 1]
+      Position		      [170, 351, 245, 399]
+      SourceBlock	      "commdigbbndpm2/QPSK\nModulator\nBaseband"
+      SourceType	      "QPSK Modulator Baseband"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      InType		      "Bit"
+      Enc		      "Binary"
+      Ph		      "pi/4"
+      numSamp		      "1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem"
+      Ports		      [2, 1]
+      Position		      [100, 1459, 200, 1501]
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      MaskHideContents	      off
+      System {
+	Name			"Subsystem"
+	Location		[2, 74, 1014, 722]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "H"
+	  Position		  [30, 43, 60, 57]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "r"
+	  Position		  [115, 153, 145, 167]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Matrix Multiply2"
+	  Ports			  [2, 1]
+	  Position		  [240, 131, 295, 169]
+	  Multiplication	  "Matrix(*)"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Pseudoinverse"
+	  Ports			  [1, 1]
+	  Position		  [115, 20, 190, 80]
+	  SourceBlock		  "dspinverses/Pseudoinverse"
+	  SourceType		  "Pseudoinverse"
+	  wanterr		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "x"
+	  Position		  [310, 143, 340, 157]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "H"
+	  SrcPort		  1
+	  DstBlock		  "Pseudoinverse"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "r"
+	  SrcPort		  1
+	  DstBlock		  "Matrix Multiply2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Matrix Multiply2"
+	  SrcPort		  1
+	  DstBlock		  "x"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pseudoinverse"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 90]
+	  DstBlock		  "Matrix Multiply2"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      Position		      [940, 1365, 1000, 1395]
+      VariableName	      "binBER"
+      MaxDataPoints	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Transpose"
+      Ports		      [1, 1]
+      Position		      [1400, 680, 1455, 720]
+      SourceBlock	      "dspmtrx3/Transpose"
+      SourceType	      "Transpose"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Hermitian		      off
+      overflowFlag	      off
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation7"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"Multipath Rayleigh\nFading Channel"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 80]
+	Branch {
+	  DstBlock		  "Multipath Rayleigh\nFading Channel4"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 80]
+	  Branch {
+	    DstBlock		    "Multipath Rayleigh\nFading Channel5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Multipath Rayleigh\nFading Channel6"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation1"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Points			[0, 80]
+	Branch {
+	  Points		  [0, 80]
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Multipath Rayleigh\nFading Channel7"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Multipath Rayleigh\nFading Channel3"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  DstBlock		  "Multipath Rayleigh\nFading Channel2"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"Multipath Rayleigh\nFading Channel1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSelector7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel4"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSelector2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel5"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSelector3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel6"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSelector4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel1"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSelector5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel2"
+      SrcPort		      1
+      Points		      [15, 0; 0, 5]
+      DstBlock		      "Multiport\nSelector6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel3"
+      SrcPort		      1
+      Points		      [15, 0; 0, 5]
+      DstBlock		      "Multiport\nSelector8"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel7"
+      SrcPort		      1
+      Points		      [15, 0; 0, -5]
+      DstBlock		      "Multiport\nSelector9"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation3"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[0, 80]
+	Branch {
+	  Points		  [0, 80]
+	  Branch {
+	    DstBlock		    "Multipath Rayleigh\nFading Channel10"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Multipath Rayleigh\nFading Channel11"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  DstBlock		  "Multipath Rayleigh\nFading Channel9"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"Multipath Rayleigh\nFading Channel8"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation2"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Points			[0, 80]
+	Branch {
+	  Points		  [0, 80]
+	  Branch {
+	    DstBlock		    "Multipath Rayleigh\nFading Channel14"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Multipath Rayleigh\nFading Channel15"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  DstBlock		  "Multipath Rayleigh\nFading Channel13"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"Multipath Rayleigh\nFading Channel12"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel8"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSelector17"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel9"
+      SrcPort		      1
+      Points		      [15, 0; 0, 10]
+      DstBlock		      "Multiport\nSelector10"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel10"
+      SrcPort		      1
+      Points		      [15, 0; 0, 15]
+      DstBlock		      "Multiport\nSelector11"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel11"
+      SrcPort		      1
+      Points		      [20, 0; 0, 10]
+      DstBlock		      "Multiport\nSelector12"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel12"
+      SrcPort		      1
+      Points		      [20, 0; 0, 15]
+      DstBlock		      "Multiport\nSelector13"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel14"
+      SrcPort		      1
+      Points		      [25, 0; 0, 5]
+      DstBlock		      "Multiport\nSelector14"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel15"
+      SrcPort		      1
+      Points		      [25, 0; 0, -20]
+      DstBlock		      "Multiport\nSelector16"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multipath Rayleigh\nFading Channel13"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSelector15"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "DSP\nConstant"
+      SrcPort		      1
+      DstBlock		      "BPSK\nModulator\nBaseband"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "BPSK\nModulator\nBaseband"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Points			[5, 0; 0, -240]
+	Branch {
+	  Points		  [0, -325]
+	  DstBlock		  "Matrix\nConcatenation7"
+	  DstPort		  2
+	}
+	Branch {
+	  DstBlock		  "Matrix\nConcatenation1"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	Points			[5, 0; 0, 85]
+	Branch {
+	  Points		  [0, 330]
+	  DstBlock		  "Matrix\nConcatenation2"
+	  DstPort		  2
+	}
+	Branch {
+	  DstBlock		  "Matrix\nConcatenation3"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector7"
+      SrcPort		      1
+      Points		      [190, 0]
+      DstBlock		      "Add"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector5"
+      SrcPort		      1
+      Points		      [30, 0; 0, -285]
+      DstBlock		      "Add"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector17"
+      SrcPort		      1
+      Points		      [45, 0; 0, -575]
+      DstBlock		      "Add"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector13"
+      SrcPort		      1
+      Points		      [45, 0; 0, -885]
+      DstBlock		      "Add"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector2"
+      SrcPort		      1
+      Points		      [90, 0; 0, 290]
+      DstBlock		      "Add1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector6"
+      SrcPort		      1
+      Points		      [210, 0]
+      DstBlock		      "Add1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector10"
+      SrcPort		      1
+      Points		      [75, 0; 0, -300]
+      DstBlock		      "Add1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector15"
+      SrcPort		      1
+      Points		      [75, 0; 0, -585]
+      DstBlock		      "Add1"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector3"
+      SrcPort		      1
+      Points		      [105, 0; 0, 595]
+      DstBlock		      "Add2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector8"
+      SrcPort		      1
+      Points		      [130, 0; 0, 300]
+      DstBlock		      "Add2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector11"
+      SrcPort		      1
+      DstBlock		      "Add2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector14"
+      SrcPort		      1
+      Points		      [185, 0]
+      DstBlock		      "Add2"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector4"
+      SrcPort		      1
+      Points		      [170, 0; 0, 855]
+      DstBlock		      "Add3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector9"
+      SrcPort		      1
+      Points		      [150, 0; 0, 570]
+      DstBlock		      "Add3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector12"
+      SrcPort		      1
+      Points		      [95, 0; 0, 265]
+      DstBlock		      "Add3"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector16"
+      SrcPort		      1
+      DstBlock		      "Add3"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector7"
+      SrcPort		      2
+      Points		      [120, 0; 0, 150]
+      DstBlock		      "Matrix\nConcatenation9"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector2"
+      SrcPort		      2
+      Points		      [150, 0; 0, 90]
+      DstBlock		      "Matrix\nConcatenation9"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector3"
+      SrcPort		      2
+      Points		      [135, 0; 0, 30]
+      DstBlock		      "Matrix\nConcatenation9"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector4"
+      SrcPort		      2
+      Points		      [190, 0]
+      DstBlock		      "Matrix\nConcatenation9"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector5"
+      SrcPort		      2
+      Points		      [215, 0]
+      DstBlock		      "Matrix\nConcatenation10"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector6"
+      SrcPort		      2
+      Points		      [190, 0; 0, 130]
+      DstBlock		      "Matrix\nConcatenation10"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector8"
+      SrcPort		      2
+      Points		      [160, 0; 0, 70]
+      DstBlock		      "Matrix\nConcatenation10"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector9"
+      SrcPort		      2
+      Points		      [0, 5; 190, 0; 0, 10]
+      DstBlock		      "Matrix\nConcatenation10"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector17"
+      SrcPort		      2
+      Points		      [15, 0; 0, -20]
+      DstBlock		      "Matrix\nConcatenation11"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector10"
+      SrcPort		      2
+      Points		      [20, 0; 0, -90]
+      DstBlock		      "Matrix\nConcatenation11"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector11"
+      SrcPort		      2
+      Points		      [180, 0; 0, -155]
+      DstBlock		      "Matrix\nConcatenation11"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector12"
+      SrcPort		      2
+      Points		      [190, 0; 0, -215]
+      DstBlock		      "Matrix\nConcatenation11"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector13"
+      SrcPort		      2
+      Points		      [20, 0; 0, -35]
+      DstBlock		      "Matrix\nConcatenation12"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector15"
+      SrcPort		      2
+      Points		      [55, 0; 0, -80]
+      DstBlock		      "Matrix\nConcatenation12"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector14"
+      SrcPort		      2
+      Points		      [105, 0; 0, -145]
+      DstBlock		      "Matrix\nConcatenation12"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector16"
+      SrcPort		      2
+      Points		      [205, 0]
+      DstBlock		      "Matrix\nConcatenation12"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Add"
+      SrcPort		      1
+      DstBlock		      "AWGN\nChannel"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Add1"
+      SrcPort		      1
+      DstBlock		      "AWGN\nChannel1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Add2"
+      SrcPort		      1
+      DstBlock		      "AWGN\nChannel3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Add3"
+      SrcPort		      1
+      DstBlock		      "AWGN\nChannel4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "AWGN\nChannel"
+      SrcPort		      1
+      Points		      [35, 0; 0, 495]
+      DstBlock		      "Matrix\nConcatenation5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "AWGN\nChannel1"
+      SrcPort		      1
+      Points		      [5, 0; 0, 170]
+      DstBlock		      "Matrix\nConcatenation5"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "AWGN\nChannel3"
+      SrcPort		      1
+      Points		      [0, -175]
+      DstBlock		      "Matrix\nConcatenation5"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "AWGN\nChannel4"
+      SrcPort		      1
+      Points		      [5, 0; 0, -480]
+      DstBlock		      "Matrix\nConcatenation5"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation5"
+      SrcPort		      1
+      DstBlock		      "Transpose"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation9"
+      SrcPort		      1
+      Points		      [275, 0]
+      DstBlock		      "Matrix\nConcatenation4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation10"
+      SrcPort		      1
+      Points		      [80, 0; 0, 210]
+      DstBlock		      "Matrix\nConcatenation4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation11"
+      SrcPort		      1
+      Points		      [25, 0; 0, 40; 130, 0; 0, 100]
+      DstBlock		      "Matrix\nConcatenation4"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation12"
+      SrcPort		      1
+      Points		      [225, 0; 0, -150]
+      DstBlock		      "Matrix\nConcatenation4"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Subsystem"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSelector18"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector18"
+      SrcPort		      1
+      DstBlock		      "Matrix\nConcatenation6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector18"
+      SrcPort		      2
+      DstBlock		      "Matrix\nConcatenation6"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector18"
+      SrcPort		      3
+      DstBlock		      "Matrix\nConcatenation6"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector18"
+      SrcPort		      4
+      DstBlock		      "Matrix\nConcatenation6"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Bernoulli Binary\nGenerator"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"QPSK\nModulator\nBaseband"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 115]
+	DstBlock		"Goto"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "QPSK\nModulator\nBaseband"
+      SrcPort		      1
+      Points		      [15, 0; 0, 175; -245, 0; 0, 120]
+      DstBlock		      "Multiport\nSelector1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector1"
+      SrcPort		      1
+      Points		      [160, 0; 0, -570]
+      DstBlock		      "Matrix\nConcatenation7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector1"
+      SrcPort		      2
+      Points		      [175, 0; 0, -255]
+      DstBlock		      "Matrix\nConcatenation1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector1"
+      SrcPort		      3
+      Points		      [175, 0; 0, 60]
+      DstBlock		      "Matrix\nConcatenation3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Multiport\nSelector1"
+      SrcPort		      4
+      Points		      [160, 0; 0, 380]
+      DstBlock		      "Matrix\nConcatenation2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation6"
+      SrcPort		      1
+      Points		      [30, 0; 0, 15]
+      DstBlock		      "Frame Status\nConversion"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Frame Status\nConversion"
+      SrcPort		      1
+      DstBlock		      "QPSK\nDemodulator\nBaseband"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "QPSK\nDemodulator\nBaseband"
+      SrcPort		      1
+      Points		      [30, 0; 0, -5]
+      DstBlock		      "Error Rate\nCalculation"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Error Rate\nCalculation"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"Display"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -100]
+	DstBlock		"To Workspace"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "From2"
+      SrcPort		      1
+      Points		      [20, 0; 0, 65]
+      DstBlock		      "Error Rate\nCalculation"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From1"
+      SrcPort		      1
+      Points		      [10, 0; 0, 70]
+      DstBlock		      "Subsystem"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From3"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Transpose"
+      SrcPort		      1
+      DstBlock		      "Goto1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Matrix\nConcatenation4"
+      SrcPort		      1
+      DstBlock		      "Goto2"
+      DstPort		      1
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    >     8    (     0         %    "
+"\"     $    !     0         .    2     8    (    !          %    \"     $    "
+"2     0         0    $@   $)E<FYO=6QL:4)I;F%R>4=E;@        "
+  }
+}
